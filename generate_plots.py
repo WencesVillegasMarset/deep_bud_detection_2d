@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[56]:
+# In[19]:
 
 
 import pandas as pd
@@ -11,7 +11,6 @@ import seaborn as sns
 import re
 import matplotlib.pyplot as plt
 import matplotlib
-get_ipython().run_line_magic('matplotlib', 'inline')
 sns.set(font_scale=1.3)
 styles = ['seaborn-paper', 'seaborn', 'seaborn-white']# ['seaborn-paper','seaborn', 'seaborn-white']
 plt.style.use(styles)
@@ -19,22 +18,23 @@ sns.set_context("paper", font_scale = 1.6)
 matplotlib.rc("font", family="Times New Roman")
 CSV_PATH = os.path.join('.', 'csv')
 FIGURES_PATH = os.path.join('.', 'figures_test')
+TABLES_PATH = os.path.join('.', 'csv', 'tables')
 
 
-# In[57]:
+# In[20]:
 
 
 full_fcn = pd.read_csv(os.path.join(CSV_PATH, 'full_segmentation_metrics_discriminado_fcn.csv'))
 full_sw = pd.read_csv(os.path.join(CSV_PATH, 'full_segmentation_metrics_discriminado_sw.csv'))
 
 
-# In[58]:
+# In[21]:
 
 
 precision_recall = pd.read_csv(os.path.join(CSV_PATH, 'full_precision_recall.csv'))
 
 
-# In[59]:
+# In[22]:
 
 
 sw = precision_recall.loc[precision_recall.architecture == 'SW']
@@ -59,13 +59,13 @@ plt.savefig(os.path.join(FIGURES_PATH, "111_precision_recall_detection.png"), dp
 
 # Histograma de splits para comparar FCN vs SW. Igual q el mandastes anoche
 
-# In[60]:
+# In[23]:
 
 
 detection_report = pd.read_csv(os.path.join(CSV_PATH, 'new_detection_report_full.csv'))
 
 
-# In[61]:
+# In[24]:
 
 
 def get_split_distribution_barplot(data, models=None):
@@ -99,7 +99,7 @@ def get_split_distribution_barplot(data, models=None):
 get_split_distribution_barplot(detection_report)
 
 
-# In[62]:
+# In[25]:
 
 
 full_fcn = pd.read_csv(os.path.join(CSV_PATH, 'full_segmentation_metrics_discriminado_fcn.csv'))
@@ -108,7 +108,7 @@ full_sw = pd.read_csv(os.path.join(CSV_PATH, 'full_segmentation_metrics_discrimi
 
 # #### Para Correctly detected, Scatterplot de precision vs recall en azul/rojo para todos los casos fully convolutional/SW
 
-# In[63]:
+# In[26]:
 
 
 fcn_precision = full_fcn.loc[full_fcn['metric'] == 'CORRECT_DETECTION'].groupby(['model_name', 'threshold_pw']).mean()['component_pw_precision']
@@ -132,7 +132,7 @@ plt.savefig(os.path.join(FIGURES_PATH, ".XXX_correctly_detected.png"), dpi=200)
 
 # ### Lo mismo para Splits
 
-# In[64]:
+# In[27]:
 
 
 fcn_precision = full_fcn.loc[full_fcn['metric'] == 'SPLIT'].groupby(['model_name', 'threshold_pw']).mean()['component_precision_joint']
@@ -160,7 +160,7 @@ plt.savefig(os.path.join(FIGURES_PATH, "XXX_splits.png"), dpi=200)
 
 # #### Para Correctlly Detected, precision vs recall pero ahora sobre componentes. En azul lasde FCN, en rojo las de SW.
 
-# In[65]:
+# In[28]:
 
 
 def compare_correctly_detected_segmentation(fcn, th_fcn, sw, th_sw, ax=None):
@@ -219,7 +219,7 @@ compare_correctly_detected_segmentation(('16s', '16s'), (0.8, 0.6), ('sw_1000px'
 
 # #### Para Splits, precision vs recall pero ahora sobre componentes. En azul lasde FCN, en rojo las de SW.
 
-# In[66]:
+# In[29]:
 
 
 def compare_split_segmentation(fcn, th_fcn, sw, th_sw, ax=None):
@@ -280,7 +280,7 @@ compare_split_segmentation(('16s', '16s'), (0.8, 0.6), ('sw_1000px', 'sw_500px')
 
 # ### Hecho en forma de Barplot, Area Relativa a GT para las dos meta architectures
 
-# In[67]:
+# In[30]:
 
 
 bins = np.linspace(0,60,61).astype(int)
@@ -311,7 +311,7 @@ plt.savefig(os.path.join(FIGURES_PATH, "AAA_mean_relative_area_fcn_vs_sw.png"), 
 
 # ##### Para dos modelos FCN y SW en particular sin promediar
 
-# In[68]:
+# In[31]:
 
 
 def get_relative_area_barplot(data, models):
@@ -357,7 +357,7 @@ get_relative_area_barplot(pd.concat([full_fcn, full_sw], axis=0), models=models)
 
 # ## Histograma de DISTANCIA relativa promedio de los false alarms FCN vs SW
 
-# In[69]:
+# In[32]:
 
 
 fcn_mean_distance = full_fcn.loc[full_fcn['metric'] == 'FALSE_ALARM'].groupby(['model_name', 'threshold_pw']).mean()['norm_distance']
@@ -394,7 +394,7 @@ plt.savefig(os.path.join(FIGURES_PATH, "AAA_normalized_distance_falsealarm_fcn_s
 
 # ##### Para dos modelos especificos sin promediar
 
-# In[70]:
+# In[33]:
 
 
 def get_normalized_distance_barplot(data, models):
@@ -426,7 +426,7 @@ def get_normalized_distance_barplot(data, models):
     plt.savefig(os.path.join(FIGURES_PATH, "CCC_normalized_distance_false_alarm.png"), dpi=200)
 
 
-# In[71]:
+# In[34]:
 
 
 models = [
@@ -441,55 +441,108 @@ models = [
 get_normalized_distance_barplot(pd.concat([full_fcn, full_sw], axis=0), models=models)
 
 
-# # Determinación de Los Modelos Ganadores
+# # Segmentation Plots con Errorbars
 
-# In[72]:
-
-
-detection_report = pd.read_csv(os.path.join(CSV_PATH, 'full_precision_recall.csv'))
+# In[35]:
 
 
-# In[73]:
+precision_recall = pd.read_csv(os.path.join(TABLES_PATH,"full_table.csv"))
+
+sw_slice = precision_recall.loc[precision_recall['model'].str.startswith('sw')]
+sw_slice['architecture'] = 'SW'
+fcn_slice = precision_recall.loc[precision_recall['model'].str.endswith('s')]
+fcn_slice['architecture'] = 'FCN'
+precision_recall = pd.concat([fcn_slice, sw_slice], axis=0,)
+
+fcn_precision = full_fcn.loc[full_fcn['metric'] == 'CORRECT_DETECTION'].groupby(['model_name', 'threshold_pw']).mean()['component_pw_precision']
+fcn_recall = full_fcn.loc[full_fcn['metric'] == 'CORRECT_DETECTION'].groupby(['model_name', 'threshold_pw']).mean()['component_pw_recall']
+sw_precision = full_sw.loc[full_sw['metric'] == 'CORRECT_DETECTION'].groupby(['model_name', 'threshold_pw']).mean()['component_pw_precision']
+sw_recall = full_sw.loc[full_sw['metric'] == 'CORRECT_DETECTION'].groupby(['model_name', 'threshold_pw']).mean()['component_pw_recall']
+
+sns.scatterplot(x=fcn_recall, y=fcn_precision,label='FCN', color='black',edgecolor='black', linewidth=1, s=40)
+sns.scatterplot(x=sw_recall, y=sw_precision, color='w', edgecolor='black', label='SW', linewidth=1, s=40)
 
 
-detection_report.loc[detection_report.architecture == 'FCN'].sort_values('F1', ascending=False).head()
+plt.errorbar(
+    precision_recall.loc[precision_recall.architecture == 'FCN']['cd_component_recall_mean']/100,
+    precision_recall.loc[precision_recall.architecture == 'FCN']['cd_component_precision_mean']/100,
+    xerr=precision_recall.loc[precision_recall.architecture == 'FCN']['cd_component_recall_std']/100,
+    yerr=precision_recall.loc[precision_recall.architecture  =='FCN']['cd_component_precision_std']/100,
+    fmt='ko',
+    elinewidth =0.5,
+    capthick=0.1,
+    ecolor='gray',
+    color='black')
+
+plt.errorbar(
+    precision_recall.loc[precision_recall.architecture == 'SW']['cd_component_recall_mean']/100,
+    precision_recall.loc[precision_recall.architecture == 'SW']['cd_component_precision_mean']/100,
+    xerr=precision_recall.loc[precision_recall.architecture == 'SW']['cd_component_recall_std']/100,
+    yerr=precision_recall.loc[precision_recall.architecture == 'SW']['cd_component_precision_std']/100,
+    fmt='wo',
+    ecolor='gray',
+    capthick=0.1,
+    elinewidth =0.5,
+    linewidth=1,
+    color='white')
+
+plt.title('Mean Segmentation Precision vs Recall for Correctly Detected Models')
+plt.xlabel('Mean Segmentation Recall')
+plt.ylabel('Mean Segmentation Precision')
+plt.xlim((0,1))
+plt.ylim((0,1))
+plt.legend(frameon=True)
+plt.tight_layout()
+
+plt.savefig(os.path.join(FIGURES_PATH, 'XXX_correctly_detected_errorbars.png'), dpi=200)
 
 
-# In[74]:
+
+# In[36]:
 
 
-detection_report.loc[detection_report.architecture == 'SW'].sort_values('F1', ascending=False).head()
+fcn_precision = full_fcn.loc[full_fcn['metric'] == 'SPLIT'].groupby(['model_name', 'threshold_pw']).mean()['component_precision_joint']
+fcn_recall = full_fcn.loc[full_fcn['metric'] == 'SPLIT'].groupby(['model_name', 'threshold_pw']).mean()['component_recall_joint']
+#SW
+sw_precision = full_sw.loc[full_sw['metric'] == 'SPLIT'].groupby(['model_name', 'threshold_pw']).mean()['component_precision_joint']
+sw_recall = full_sw.loc[full_sw['metric'] == 'SPLIT'].groupby(['model_name', 'threshold_pw']).mean()['component_recall_joint']
 
 
-# Los modelos que quedan como "Ganadores" por F1 Score son:
-# 
-# * FCN 16s threshold: 0.8 
-# * FCN 16s threshold: 0.6 (DICE)
-# * SW 1000px threshold: 1.0
-# * sw_500px	threshold 4.0 (DICE)
-# 
-
-# In[75]:
+sns.scatterplot(x=fcn_recall, y=fcn_precision,label='FCN', color='black',edgecolor='black', linewidth=1, s=40)
+sns.scatterplot(x=sw_recall, y=sw_precision, color='w', edgecolor='black', label='SW', linewidth=1, s=40)
 
 
-# detection_report.drop(['Unnamed: 0','Unnamed: 0.1'], axis=1, inplace=True)
-detection_report.sort_values('F1', ascending=False).iloc[60:70,:]
+plt.errorbar(
+    precision_recall.loc[precision_recall.architecture == 'FCN']['split_component_recall_mean']/100,
+    precision_recall.loc[precision_recall.architecture == 'FCN']['split_component_precision_mean']/100,
+    xerr=precision_recall.loc[precision_recall.architecture == 'FCN']['cd_component_recall_std']/100,
+    yerr=precision_recall.loc[precision_recall.architecture  =='FCN']['cd_component_precision_std']/100,
+    fmt='ko',
+    elinewidth =0.5,
+    capthick=0.1,
+    ecolor='gray',
+    color='black')
+
+plt.errorbar(
+    precision_recall.loc[precision_recall.architecture == 'SW']['split_component_recall_mean']/100,
+    precision_recall.loc[precision_recall.architecture == 'SW']['split_component_precision_mean']/100,
+    xerr=precision_recall.loc[precision_recall.architecture == 'SW']['split_component_recall_std']/100,
+    yerr=precision_recall.loc[precision_recall.architecture == 'SW']['split_component_precision_std']/100,
+    fmt='wo',
+    ecolor='gray',
+    capthick=0.1,
+    elinewidth =0.5,
+    linewidth=1,
+    color='white')
 
 
-# In[76]:
+plt.title('Mean Segmentation Precision vs Recall for SPLIT Models')
+plt.xlabel('Mean Segmentation Recall')
+plt.ylabel('Mean Segmentation Precision')
+plt.xlim((0,1))
+plt.ylim((0,1))
+plt.legend(frameon=True)
+plt.tight_layout()
 
-
-seg_report = pd.read_csv(os.path.join(CSV_PATH,'new_full_mean_segmentation_report.csv'))
-
-
-# In[77]:
-
-
-seg_report.loc[seg_report.model_name.str.endswith('s')].sort_values('component_dice', ascending=False).head()
-
-
-# In[78]:
-
-
-seg_report.loc[seg_report.model_name.str.endswith('px')].sort_values('component_dice', ascending=False).head()
+plt.savefig(os.path.join(FIGURES_PATH,'XXX_splits_errorbars.png'), dpi=200)
 
