@@ -7,8 +7,10 @@
 \usepackage{hyperref}
 \usepackage{subfig}
 \usepackage{graphicx}
+\usepackage{adjustbox}
 \usepackage{epstopdf}
 \usepackage{gensymb}
+\usepackage{xcolor,colortbl}
 %TODO: remover
 \DeclareUnicodeCharacter{0301}{\'{e}}
 \hypersetup{unicode=true,
@@ -323,83 +325,50 @@ Fig XXX (b) shows results for the splitted detections, where the segmented preci
 
 To complete these figures, we report in Table XX the detection-precision, detection-recall, the F1 detection measure computed from them, as well as the segmentation-precision and segmentation-recall with their corresponding F1 segmentation measure which is the Dice measure, for all 27 configurations of FCN (first row) and all 40 configurations of SW (second row). The best among FCN and the best among all SW has been marked in bold. From this table, one can see that...
 
+
 \begin{table}[]
 	\tiny
-	\begin{tabular}{llllll}
-		\hline
-		\textbf{Architecture} & \textbf{Model}      & \textbf{threshold} & \textbf{precision} & \textbf{recall} & \textbf{F1}    \\ \hline
-		\textbf{FCN}          & \textbf{16s}        & \textbf{0,8}       & \textbf{0,977}     & \textbf{0,921}  & \textbf{0,949} \\
-		FCN & 16s        & 0,6 & 0,956 & 0,936 & 0,946 \\
-		FCN & 16s        & 0,9 & 0,977 & 0,914 & 0,945 \\
-		FCN & 16s        & 0,7 & 0,949 & 0,921 & 0,935 \\
-		FCN & 8s         & 0,9 & 0,901 & 0,971 & 0,935 \\
-		FCN & 16s        & 0,5 & 0,911 & 0,957 & 0,933 \\
-		FCN & 16s        & 0,3 & 0,873 & 0,986 & 0,926 \\
-		FCN & 16s        & 0,4 & 0,870 & 0,964 & 0,915 \\
-		FCN & 8s         & 0,8 & 0,846 & 0,979 & 0,907 \\
-		FCN & 8s         & 0,7 & 0,840 & 0,986 & 0,907 \\
-		FCN & 16s        & 0,2 & 0,821 & 0,993 & 0,899 \\
-		FCN & 8s         & 0,6 & 0,812 & 0,986 & 0,890 \\
-		FCN & 32s        & 0,9 & 0,822 & 0,964 & 0,887 \\
-		FCN & 32s        & 0,8 & 0,768 & 0,978 & 0,861 \\
-		FCN & 32s        & 0,7 & 0,757 & 0,986 & 0,856 \\
-		FCN & 8s         & 0,5 & 0,754 & 0,986 & 0,854 \\
-		FCN & 8s         & 0,4 & 0,739 & 0,993 & 0,848 \\
-		FCN & 16s        & 0,1 & 0,713 & 1,000 & 0,832 \\
-		FCN & 8s         & 0,3 & 0,688 & 0,993 & 0,813 \\
-		FCN & 32s        & 0,6 & 0,685 & 0,993 & 0,811 \\
-		\textbf{SW}           & \textbf{sw\_1000px} & \textbf{1}         & \textbf{0,670}     & \textbf{1,000}  & \textbf{0,802} \\
-		SW  & sw\_900px  & 1   & 0,643 & 1,000 & 0,783 \\
-		FCN & 8s         & 0,2 & 0,641 & 0,993 & 0,779 \\
-		FCN & 32s        & 0,4 & 0,607 & 0,993 & 0,753 \\
-		FCN & 32s        & 0,5 & 0,605 & 0,993 & 0,752 \\
-		SW  & sw\_800px  & 1   & 0,567 & 1,000 & 0,724 \\
-		SW  & sw\_1000px & 2   & 0,567 & 0,983 & 0,719 \\
-		SW  & sw\_900px  & 2   & 0,531 & 0,992 & 0,692 \\
-		FCN & 32s        & 0,2 & 0,509 & 1,000 & 0,675 \\
-		SW  & sw\_700px  & 1   & 0,506 & 1,000 & 0,672 \\
-		FCN & 32s        & 0,3 & 0,498 & 1,000 & 0,665 \\
-		SW  & sw\_800px  & 2   & 0,496 & 0,992 & 0,661 \\
-		SW  & sw\_700px  & 2   & 0,443 & 0,992 & 0,613 \\
-		SW  & sw\_600px  & 1   & 0,435 & 1,000 & 0,606 \\
-		FCN & 8s         & 0,1 & 0,436 & 0,993 & 0,606 \\
-		SW  & sw\_1000px & 3   & 0,455 & 0,885 & 0,601 \\
-		SW  & sw\_600px  & 2   & 0,417 & 1,000 & 0,588 \\
-		SW  & sw\_500px  & 3   & 0,415 & 0,985 & 0,584 \\
-		SW  & sw\_900px  & 3   & 0,422 & 0,924 & 0,580 \\
-		SW  & sw\_500px  & 1   & 0,402 & 1,000 & 0,573 \\
-		SW  & sw\_700px  & 3   & 0,409 & 0,950 & 0,571 \\
-		SW  & sw\_500px  & 4   & 0,407 & 0,928 & 0,566 \\
-		SW  & sw\_800px  & 3   & 0,399 & 0,933 & 0,559 \\
-		SW  & sw\_500px  & 2   & 0,386 & 1,000 & 0,557 \\
-		SW  & sw\_400px  & 4   & 0,390 & 0,969 & 0,556 \\
-		SW  & sw\_600px  & 3   & 0,385 & 0,984 & 0,554 \\
-		SW  & sw\_600px  & 4   & 0,388 & 0,951 & 0,551 \\
-		SW  & sw\_400px  & 3   & 0,381 & 0,993 & 0,551 \\
-		FCN & 32s        & 0,1 & 0,354 & 1,000 & 0,522 \\
-		SW  & sw\_700px  & 4   & 0,379 & 0,836 & 0,522 \\
-		SW  & sw\_300px  & 4   & 0,353 & 0,955 & 0,515 \\
-		SW  & sw\_400px  & 2   & 0,346 & 1,000 & 0,514 \\
-		SW  & sw\_800px  & 4   & 0,363 & 0,874 & 0,513 \\
-		SW  & sw\_900px  & 4   & 0,359 & 0,814 & 0,499 \\
-		SW  & sw\_400px  & 1   & 0,327 & 1,000 & 0,493 \\
-		SW  & sw\_1000px & 4   & 0,358 & 0,759 & 0,487 \\
-		SW  & sw\_200px  & 4   & 0,300 & 0,940 & 0,455 \\
-		SW  & sw\_300px  & 3   & 0,294 & 0,993 & 0,454 \\
-		SW  & sw\_300px  & 2   & 0,291 & 0,993 & 0,450 \\
-		SW  & sw\_300px  & 1   & 0,269 & 1,000 & 0,424 \\
-		SW  & sw\_200px  & 3   & 0,260 & 0,986 & 0,411 \\
-		SW  & sw\_200px  & 2   & 0,217 & 0,986 & 0,355 \\
-		SW  & sw\_200px  & 1   & 0,200 & 1,000 & 0,333 \\
-		SW  & sw\_100px  & 4   & 0,195 & 0,874 & 0,319 \\
-		SW  & sw\_100px  & 3   & 0,146 & 0,931 & 0,253 \\
-		SW  & sw\_100px  & 2   & 0,117 & 0,964 & 0,209 \\
-		SW  & sw\_100px  & 1   & 0,094 & 1,000 & 0,172 \\ \hline
-	\end{tabular}
-	\caption{Details on the detection precision,  detection recall, and their corresponding  F1  measure for each of the 27 configurations of hyperparameters considered for FCN, i.e., the three architectures \{8s,16s, 32s\} and 9 thresholds $\tau=\{0.1,0.2,...,0.9\}$, as well as the 40 configurations considered for SW, i.e., the (squared) patch sizes  $\{100,200,...,1000\}$ and voting thresholds $\{1,2,3,4\}$; all sorted in decreasing order of F1.  }
-	\label{tab:TablaXX}
+	\centering
+	\begin{adjustbox}{angle=90}
+		\begin{tabular}{lllllllllllll}
+			\hline
+			\multicolumn{1}{|l|}{\textbf{}} & \multicolumn{4}{l|}{\textbf{Detection}} & \multicolumn{3}{l|}{\textbf{Segmentation-CD [mean (sd)]}} & \multicolumn{3}{l|}{\textbf{Segmentation-S [mean (sd)]}} & \multicolumn{2}{l|}{\textbf{FA [mean (sd)]}} \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Model}} & \multicolumn{1}{l|}{\textbf{Prec}} & \multicolumn{1}{l|}{\textbf{Rec}} & \multicolumn{1}{l|}{\textbf{F1}} & \multicolumn{1}{l|}{\textbf{S\#}} & \multicolumn{1}{l|}{\textbf{Prec}} & \multicolumn{1}{l|}{\textbf{Rec}} & \multicolumn{1}{l|}{\textbf{Dice}} & \multicolumn{1}{l|}{\textbf{Prec}} & \multicolumn{1}{l|}{\textbf{Rec}} & \multicolumn{1}{l|}{\textbf{Dice}} & \multicolumn{1}{l|}{\textbf{Relat Area}} & \multicolumn{1}{l|}{\textbf{Norm Dist}} \\ \hline
+			$FCN_{8s}^{0.5}$ & 75,4 & 98,6 & 85,4 & 2 & 91,0 (11,3) & 90,2 (11,7) & \cellcolor[HTML]{81D41A}\textbf{89,6 (10,3)} & 96,6 (2,2) & 73,1 (17,6) & \cellcolor[HTML]{81D41A}\textbf{82,1 (10,2)} & 0,26 (0,69) & 3,72 (4,64) \\
+			$FCN_{8s}^{0.9}$ & 90,1 & 97,1 & 93,5 & 8 & \cellcolor[HTML]{81D41A}\textbf{98,1 (6,0)} & 68,3 (21,1) & 77,9 (19,6) & 98,7 (3,0) & 57,4 (18,4) & 70,8 (13,6) & 0,24 (0,5) & 3,8 (5,66) \\
+			$FCN_{16s}^{0.1}$ & 71,3 & \cellcolor[HTML]{81D41A}\textbf{100} & 83,2 & 6 & 75,7 (13,1) & 95,4 (14,7) & 83,1 (13,5) & 83,1 (8,9) & 54,1 (21,9) & 61,9 (17,5) & 0,12 (0,44) & 5,27 (6,53) \\
+			$FCN_{16s}^{0.4}$ & 87,0 & 96,4 & 91,5 & 1 & 87,7 (12,1) & 89,8 (18,2) & 87,0 (15,6) & 96,7 (0,0) & 37,0 (0,0) & 53,5 (0,0) & \cellcolor[HTML]{81D41A}\textbf{0,04 (0,09)} & 3,8 (5,08) \\
+			$FCN_{16s}^{0.6}$ & 95,6 & 93,6 & 94,6 & 3 & 92,2 (8,7) & 88,2 (13,3) & 89,1 (10,7) & 99,4 (0,6) & 16,2 (10,6) & 26,6 (16,8) & 0,08 (0,11) & \cellcolor[HTML]{81D41A}\textbf{1,1 (0,65)} \\
+			$FCN_{16s}^{0.8}$ & \cellcolor[HTML]{81D41A}\textbf{97,7} & 92,1 & \cellcolor[HTML]{81D41A}\textbf{94,9} & 4 & 95,8 (7,0) & 81,6 (14,6) & 87,0 (10,7) & 99,7 (0,3) & 34,2 (32,6) & 43,9 (33,1) & 0,1 (0,12) & 1,28 (0,95) \\
+			$FCN_{16s}^{0.9}$ & \cellcolor[HTML]{81D41A}\textbf{97,7} & 91,4 & 94,5 & 4 & 97,6 (5,6) & 74,5 (16,5) & 83,1 (12,8) & \cellcolor[HTML]{81D41A}\textbf{99,9 (0,1)} & 31,8 (27,9) & 41,6 (34,0) & 0,07 (0,11) & 1,33 (0,9) \\
+			$FCN_{32s}^{0.1}$ & 35,4 & \cellcolor[HTML]{81D41A}\textbf{100} & 52,2 & 8 & 67,4 (14,0) & \cellcolor[HTML]{81D41A}\textbf{98,8 (3,4)} & 79,1 (11,0) & 86,0 (9,4) & 73,4 (19,6) & 77,1 (10,4) & 0,14 (0,66) & 4,62 (5,59) \\
+			$FCN_{32s}^{0.2}$ & 50,9 & \cellcolor[HTML]{81D41A}\textbf{100} & 67,5 & 10 & 73,9 (13,6) & 98,1 (3,8) & 83,5 (10,1) & 92,2 (5,4) & 53,4 (25,8) & 63,6 (19,3) & 0,17 (0,55) & 4,33 (6,17) \\
+			$FCN_{32s}^{0.3}$ & 49,8 & \cellcolor[HTML]{81D41A}\textbf{100} & 66,5 & 10 & 79,1 (13,2) & 95,5 (10,5) & 85,2 (11,8) & 88,5 (9,7) & 61,0 (35,1) & 65,8 (28,2) & 0,1 (0,39) & 3,68 (5,62) \\
+			$FCN_{32s}^{0.6}$ & 68,5 & 99,3 & 81,1 & 16 & 89,0 (11,5) & 89,1 (11,3) & 88,1 (9,6) & 92,4 (7,7) & \cellcolor[HTML]{81D41A}\textbf{74,7 (28,1)} & 78,1 (24,0) & 0,11 (0,3) & 2,95 (4,36) \\
+			$FCN_{32s}^{0.9}$ & 82,2 & 96,4 & 88,7 & \cellcolor[HTML]{81D41A}\textbf{42} & 96,2 (8,9) & 69,8 (15,9) & 79,6 (13,5) & 98,7 (3,0) & 62,8 (22,3) & 74,1 (19,4) & 0,05 (0,13) & 3,15 (4,8) \\
+			$SW_{100}^{1}$ & \textbf{9,4} & \cellcolor[HTML]{E0C2CD}\textbf{100} & \textbf{17,2} & 28 & 24,6 (17,7) & 86,7 (19,5) & 33,6 (15,1) & 57,9 (28,2) & 24,8 (16,8) & 27,9 (13,8) & 1,08 (3,2) & 7,68 (6,02) \\
+			$SW_{100}^{3}$ & 14,6 & 93,1 & 25,3 & 40 & 42,4 (26,4) & 56,8 (29,9) & \cellcolor[HTML]{E0C2CD}\textbf{39,9 (19,7)} & 55,5 (32,2) & 24,8 (18,1) & 26,0 (15,6) & 0,31 (0,96) & 6,45 (6,19) \\
+			$SW_{100}^{4}$ & 19,5 & 87,4 & 31,9 & \cellcolor[HTML]{E0C2CD}\textbf{49} & \cellcolor[HTML]{E0C2CD}\textbf{46,5 (29,3)} & 39,2 (28,9) & 33,9 (21,1) & 49,0 (29,0) & 20,1 (13,7) & 24,1 (14,0) & \cellcolor[HTML]{E0C2CD}\textbf{0,22 (0,57)} & \cellcolor[HTML]{E0C2CD}\textbf{6,0 (6,56)} \\
+			$SW_{200}^{1}$ & 20,0 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 33,3 & 12 & 16,6 (12,5) & 94,9 (13,5) & 25,9 (14,2) & 49,3 (26,4) & 40,2 (17,4) & 36,8 (11,9) & 5,13 (19,3) & 7,56 (5,35) \\
+			$SW_{200}^{3}$ & 26,0 & 98,6 & 41,1 & 19 & 29,9 (17,0) & 74,7 (27,3) & 38,5 (17,0) & \cellcolor[HTML]{E0C2CD}\textbf{67,5 (32,7)} & 16,5 (8,9) & 24,2 (11,9) & 1,69 (3,15) & 8,94 (6,22) \\
+			$SW_{300}^{1}$ & 26,9 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 42,4 & 2 & 13,7 (13,6) & 97,0 (9,6) & 21,6 (15,5) & 55,0 (11,8) & 48,1 (1,1) & \cellcolor[HTML]{E0C2CD}\textbf{50,8 (4,5)} & 7,79 (20,5) & 6,83 (4,44) \\
+			$SW_{400}^{1}$ & 32,7 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 49,3 & 2 & 10,5 (11,7) & 98,7 (9,3) & 17,2 (15,3) & 42,6 (10,1) & 61,9 (11,6) & 50,4 (10,9) & 11,59 (24,05) & 7,12 (4,15) \\
+			$SW_{400}^{2}$ & 34,6 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 51,4 & 4 & 15,6 (15,1) & 94,5 (13,3) & 23,8 (15,6) & 48,7 (27,6) & 36,0 (4,6) & 38,6 (13,1) & 9,54 (26,13) & 7,88 (4,89) \\
+			$SW_{500}^{1}$ & 40,2 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 57,3 & 1 & 8,40 (9,7) & \cellcolor[HTML]{E0C2CD}\textbf{99,9 (4,9)} & 14,2 (13,8) & 17,9 (0,0) & \cellcolor[HTML]{E0C2CD}\textbf{78,6 (0,0)} & 29,2 (0,0) & 17,39 (30,07) & 7,22 (4,04) \\
+			$SW_{500}^{2}$ & 38,6 & \cellcolor[HTML]{E0C2CD}\textbf{100} & 55,7 & 1 & 13,5 (14,0) & 95,2 (14,5) & 21,0 (16,0) & 35,2 (0,0) & 45,9 (0,0) & 39,8 (0,0) & 17,19 (39,07) & 7,56 (4,42) \\
+			$SW_{600}^{1}$ & 43,5 & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & 60,6 & 0 & 6,9 (7,8) & 98,5 (10,7) & 12,0 (12,0) & nan (nan) & nan (nan) & nan (nan) & 25,48 (48,45) & 7,72 (4,3) \\
+			$SW_{600}^{2}$ & 41,7 & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & 58,8 & 1 & 10,4 (10,6) & 93,7 (18,9) & 17,2 (14,4) & 19,7 (0,0) & 27,2 (0,0) & 22,9 (0,0) & 20,41 (38,32) & 7,92 (4,38) \\
+			$SW_{700}^{1}$ & 50,6 & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & 67,2 & 0 & 5,6 (6,5) & 98,6 (12,0) & 9,9 (10,3) & nan (nan) & nan (nan) & nan (nan) & 31,95 (64,36) & 7,75 (4,45) \\
+			$SW_{800}^{1}$ & 56,7 & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & 72,4 & 0 & 5,1 (6,6) & 97,7 (11,0) & 9,0 (10,4) & nan (nan) & nan (nan) & nan (nan) & 44,53 (71,52) & 7,7 (4,06) \\
+			$SW_{900}^{1}$ & 64,3 & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & 78,3 & 0 & 4,2 (5,7) & 94,7 (19,0) & 7,5 (9,2) & nan (nan) & nan (nan) & nan (nan) & 48,16 (80,31) & 7,9 (4,35) \\
+			$SW_{1000}^{1}$ & \cellcolor[HTML]{E0C2CD}\textbf{67,0} & \cellcolor[HTML]{E0C2CD}\textbf{100,0} & \cellcolor[HTML]{E0C2CD}\textbf{80,2} & 0 & 3,7 (4,7) & 95,3 (18,3) & 6,8 (7,9) & nan (nan) & nan (nan) & nan (nan) & 57,83 (84,87) & 7,91 (4,3) \\ \hline
+		\end{tabular}
+	\end{adjustbox}
+	\caption{Details on the detection precision,  detection recall, and their corresponding  F1  measure for each of the 27 configurations of hyperparameters considered for FCN, i.e., the three architectures \{8s,16s, 32s\} and 9 thresholds $\tau=\{0.1,0.2,...,0.9\}$, as well as the 40 configurations considered for SW, i.e., the (squared) patch sizes  $\{100,200,...,1000\}$ and voting thresholds $\{1,2,3,4\}$; all sorted in decreasing order of F1.}
+
+	\label{tab:TableXX}
 \end{table}
-  
+
 
 The above results for segmentation report for each model the mean values for each segmentation metric over all images, difflicuting any possible understanding on what happens individually for each image/bud. We thus complement the above with reports of these metrics but for individual images. For that, we selected two models/configurations for FCN and two models/configurations for SW, corresponding to the best w.r.t. to the F1 detection measure and the best w.r.t. to the F1 segmentation measure or Dice metric. For FCN, the resulting models are those of architecture 16s and thresholds $\tau=0.8$ and $\tau=0.6$ corresponding to the one with highest F1 and the one with highest Dice, respectively. For SW, the model with highest F1 detection measure is the one with 1000px window size and voting threshold 1, whereas the one with highest Dice is the one with 500px window size and voting threshold 4. 
 As above, we discriminate the results for the \emph{correctly detected} and \emph{splitted} components, shown in Figures ZZZ (a) and (b),  respectively. These figures show four scatterplots each, one for each of the four cases, with black (white) elements representing the results for the two hyperparameter configurations chosen for FCN (SW); specifically, the black circles for the FCN with architecture 16s and threshold $\tau=0.8$,  the black squares for the  FCN with architecture 16s and threshold $\tau=0.6$, the white circles for the SW with patch size of $1000$ and voting $1$, and white squares for the SW with patch size $500$ and voting threshold $4$. Here, there is one point in the scatter plot per image in the test set, whose coordinates correspond to its segmentation precision and recall. In Figure ZZZ(a), the precision and recall is computed over the \emph{correctly detected} component of the image (w.r.t. the mask of the true bud); while in Figure ZZZ(b),  the precision and recall is computed over the union mask of all \emph{splitted} components.
