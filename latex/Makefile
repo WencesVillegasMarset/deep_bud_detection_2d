@@ -11,7 +11,8 @@ out:
 	if  [ -f $(BASE).out ] ; then cp $(BASE).out tmp.out; fi ;
 	sed 's/BOOKMARK/dtxmark/g;' tmp.out > x.out; mv x.out tmp.out ;
 
-pdf:
+pdf:	
+	cp -u ../figures/*.png ./figures/
 	pdflatex -synctex=1 -interaction=nonstopmode $(BASE).tex && bibtex $(BASE)
 
 clean:
