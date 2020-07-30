@@ -1,0 +1,564 @@
+\begin{thebibliography}{62}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Berenstein et~al.(2010)Berenstein, Shahar, Shapiro and
+  Edan}]{berenstein2010grape}
+\bibinfo{author}{Berenstein, R.}, \bibinfo{author}{Shahar, O.B.},
+  \bibinfo{author}{Shapiro, A.}, \bibinfo{author}{Edan, Y.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Grape clusters and foliage detection algorithms for
+  autonomous selective vineyard sprayer}.
+\newblock \bibinfo{journal}{Intelligent Service Robotics} \bibinfo{volume}{3},
+  \bibinfo{pages}{233--243}.
+%Type = Article
+\bibitem[{Borgogno-Mondino et~al.(2018)Borgogno-Mondino, Lessio, Tarricone,
+  Novello and de~Palma}]{borgogno2018comparison}
+\bibinfo{author}{Borgogno-Mondino, E.}, \bibinfo{author}{Lessio, A.},
+  \bibinfo{author}{Tarricone, L.}, \bibinfo{author}{Novello, V.},
+  \bibinfo{author}{de~Palma, L.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A comparison between multispectral aerial and
+  satellite imagery in precision viticulture}.
+\newblock \bibinfo{journal}{Precision Agriculture} \bibinfo{volume}{19},
+  \bibinfo{pages}{195--217}.
+%Type = Article
+\bibitem[{Bramley(2009)}]{bramley2009lessons}
+\bibinfo{author}{Bramley, R.G.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Lessons from nearly 20 years of precision agriculture
+  research, development, and adoption as a guide to its appropriate
+  application}.
+\newblock \bibinfo{journal}{Crop and Pasture Science} \bibinfo{volume}{60},
+  \bibinfo{pages}{197--217}.
+%Type = Inproceedings
+\bibitem[{Chum and Zisserman(2007)}]{chum2007exemplar}
+\bibinfo{author}{Chum, O.}, \bibinfo{author}{Zisserman, A.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{An exemplar model for learning object classes}, in:
+  \bibinfo{booktitle}{2007 IEEE Conference on Computer Vision and Pattern
+  Recognition}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1--8}.
+%Type = Article
+\bibitem[{Collins et~al.(2020)Collins, Wang, Lesefko, De~Bei and
+  Fuentes}]{collins2020effects}
+\bibinfo{author}{Collins, C.}, \bibinfo{author}{Wang, X.},
+  \bibinfo{author}{Lesefko, S.}, \bibinfo{author}{De~Bei, R.},
+  \bibinfo{author}{Fuentes, S.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Effects of canopy management practices on grapevine
+  bud fruitfulness}.
+\newblock \bibinfo{journal}{OENO One} \bibinfo{volume}{54},
+  \bibinfo{pages}{313--325}.
+%Type = Inproceedings
+\bibitem[{Csurka et~al.(2004)Csurka, Dance, Fan, Willamowski and
+  Bray}]{csurka2004visual}
+\bibinfo{author}{Csurka, G.}, \bibinfo{author}{Dance, C.},
+  \bibinfo{author}{Fan, L.}, \bibinfo{author}{Willamowski, J.},
+  \bibinfo{author}{Bray, C.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Visual categorization with bags of keypoints}, in:
+  \bibinfo{booktitle}{Workshop on statistical learning in computer vision,
+  ECCV}, \bibinfo{organization}{Prague}. pp. \bibinfo{pages}{1--2}.
+%Type = Inproceedings
+\bibitem[{{Dalal} and {Triggs}(2005)}]{dalal2005histograms}
+\bibinfo{author}{{Dalal}, N.}, \bibinfo{author}{{Triggs}, B.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Histograms of oriented gradients for human
+  detection}, in: \bibinfo{booktitle}{2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition (CVPR'05)}, pp.
+  \bibinfo{pages}{886--893 vol. 1}.
+%Type = Article
+\bibitem[{Diago et~al.(2012)Diago, Correa, Mill{\'a}n, Barreiro, Valero and
+  Tardaguila}]{diago2012grapevine}
+\bibinfo{author}{Diago, M.P.}, \bibinfo{author}{Correa, C.},
+  \bibinfo{author}{Mill{\'a}n, B.}, \bibinfo{author}{Barreiro, P.},
+  \bibinfo{author}{Valero, C.}, \bibinfo{author}{Tardaguila, J.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Grapevine yield and leaf area estimation using
+  supervised classification methodology on rgb images taken under field
+  conditions}.
+\newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{12},
+  \bibinfo{pages}{16988--17006}.
+%Type = Article
+\bibitem[{D{\'\i}az et~al.(2018)D{\'\i}az, P{\'e}rez, Miatello and
+  Bromberg}]{diaz2018grapevine}
+\bibinfo{author}{D{\'\i}az, C.A.}, \bibinfo{author}{P{\'e}rez, D.S.},
+  \bibinfo{author}{Miatello, H.}, \bibinfo{author}{Bromberg, F.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Grapevine buds detection and localization in 3d space
+  based on structure from motion and 2d image classification}.
+\newblock \bibinfo{journal}{Computers in Industry} \bibinfo{volume}{99},
+  \bibinfo{pages}{303--312}.
+%Type = Article
+\bibitem[{Dice(1945)}]{dice1945measures}
+\bibinfo{author}{Dice, L.R.}, \bibinfo{year}{1945}.
+\newblock \bibinfo{title}{Measures of the amount of ecologic association
+  between species}.
+\newblock \bibinfo{journal}{Ecology} \bibinfo{volume}{26},
+  \bibinfo{pages}{297--302}.
+%Type = Inproceedings
+\bibitem[{Divvala et~al.(2009)Divvala, Hoiem, Hays, Efros and
+  Hebert}]{divvala2009empirical}
+\bibinfo{author}{Divvala, S.K.}, \bibinfo{author}{Hoiem, D.},
+  \bibinfo{author}{Hays, J.H.}, \bibinfo{author}{Efros, A.A.},
+  \bibinfo{author}{Hebert, M.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{An empirical study of context in object detection},
+  in: \bibinfo{booktitle}{2009 IEEE Conference on computer vision and Pattern
+  Recognition}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1271--1278}.
+%Type = Article
+\bibitem[{Ferrari et~al.(2007)Ferrari, Fevrier, Jurie and
+  Schmid}]{ferrari2007groups}
+\bibinfo{author}{Ferrari, V.}, \bibinfo{author}{Fevrier, L.},
+  \bibinfo{author}{Jurie, F.}, \bibinfo{author}{Schmid, C.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Groups of adjacent contour segments for object
+  detection}.
+\newblock \bibinfo{journal}{IEEE transactions on pattern analysis and machine
+  intelligence} \bibinfo{volume}{30}, \bibinfo{pages}{36--51}.
+%Type = Article
+\bibitem[{Garcia-Garcia et~al.(2018)Garcia-Garcia, Orts-Escolano, Oprea,
+  Villena-Martinez, Martinez-Gonzalez and Garcia-Rodriguez}]{garcia2018survey}
+\bibinfo{author}{Garcia-Garcia, A.}, \bibinfo{author}{Orts-Escolano, S.},
+  \bibinfo{author}{Oprea, S.}, \bibinfo{author}{Villena-Martinez, V.},
+  \bibinfo{author}{Martinez-Gonzalez, P.}, \bibinfo{author}{Garcia-Rodriguez,
+  J.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A survey on deep learning techniques for image and
+  video semantic segmentation}.
+\newblock \bibinfo{journal}{Applied Soft Computing} \bibinfo{volume}{70},
+  \bibinfo{pages}{41--65}.
+%Type = Article
+\bibitem[{Grimm et~al.(2019)Grimm, Herzog, Rist, Kicherer, T{\"o}pfer and
+  Steinhage}]{grimm2019adaptable}
+\bibinfo{author}{Grimm, J.}, \bibinfo{author}{Herzog, K.},
+  \bibinfo{author}{Rist, F.}, \bibinfo{author}{Kicherer, A.},
+  \bibinfo{author}{T{\"o}pfer, R.}, \bibinfo{author}{Steinhage, V.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{An adaptable approach to automated visual detection
+  of plant organs with applications in grapevine breeding}.
+\newblock \bibinfo{journal}{Biosystems Engineering} \bibinfo{volume}{183},
+  \bibinfo{pages}{170--183}.
+%Type = Inproceedings
+\bibitem[{Han(2013)}]{han2013comparison}
+\bibinfo{author}{Han, D.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Comparison of commonly used image interpolation
+  methods}, in: \bibinfo{booktitle}{Proceedings of the 2nd international
+  conference on computer science and electronics engineering},
+  \bibinfo{organization}{Atlantis Press}.
+%Type = Inproceedings
+\bibitem[{Herzog et~al.(2014a)Herzog, Kicherer and
+  T{\"o}pfer}]{herzog2014objective}
+\bibinfo{author}{Herzog, K.}, \bibinfo{author}{Kicherer, A.},
+  \bibinfo{author}{T{\"o}pfer, R.}, \bibinfo{year}{2014}a.
+\newblock \bibinfo{title}{Objective phenotyping the time of bud burst by
+  analyzing grapevine field images}, in: \bibinfo{booktitle}{XI International
+  Conference on Grapevine Breeding and Genetics 1082}, pp.
+  \bibinfo{pages}{379--385}.
+%Type = Article
+\bibitem[{Herzog et~al.(2014b)}]{herzog2014initial}
+\bibinfo{author}{Herzog, K.}, et~al., \bibinfo{year}{2014}b.
+\newblock \bibinfo{title}{Initial steps for high-throughput phenotyping in
+  vineyards}.
+\newblock \bibinfo{journal}{Australian and New Zealand Grapegrower and
+  Winemaker} , \bibinfo{pages}{54}.
+%Type = Incollection
+\bibitem[{Hirano et~al.(2006)Hirano, Garcia, Sukthankar and
+  Hoogs}]{hirano2006industry}
+\bibinfo{author}{Hirano, Y.}, \bibinfo{author}{Garcia, C.},
+  \bibinfo{author}{Sukthankar, R.}, \bibinfo{author}{Hoogs, A.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Industry and object recognition: Applications,
+  applied research and challenges}, in: \bibinfo{booktitle}{Toward
+  category-level object recognition}. \bibinfo{publisher}{Springer}, pp.
+  \bibinfo{pages}{49--64}.
+%Type = Article
+\bibitem[{Howard et~al.(2017)Howard, Zhu, Chen, Kalenichenko, Wang, Weyand,
+  Andreetto and Adam}]{howard2017mobilenets}
+\bibinfo{author}{Howard, A.G.}, \bibinfo{author}{Zhu, M.},
+  \bibinfo{author}{Chen, B.}, \bibinfo{author}{Kalenichenko, D.},
+  \bibinfo{author}{Wang, W.}, \bibinfo{author}{Weyand, T.},
+  \bibinfo{author}{Andreetto, M.}, \bibinfo{author}{Adam, H.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Mobilenets: Efficient convolutional neural networks
+  for mobile vision applications}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1704.04861} .
+%Type = Article
+\bibitem[{Intrigliolo and Castel(2007)}]{intrigliolo2007evaluation}
+\bibinfo{author}{Intrigliolo, D.}, \bibinfo{author}{Castel, J.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Evaluation of grapevine water status from trunk
+  diameter variations}.
+\newblock \bibinfo{journal}{Irrigation Science} \bibinfo{volume}{26},
+  \bibinfo{pages}{49--59}.
+%Type = Article
+\bibitem[{Jaccard(1912)}]{jaccard1912distribution}
+\bibinfo{author}{Jaccard, P.}, \bibinfo{year}{1912}.
+\newblock \bibinfo{title}{The distribution of the flora in the alpine zone. 1}.
+\newblock \bibinfo{journal}{New phytologist} \bibinfo{volume}{11},
+  \bibinfo{pages}{37--50}.
+%Type = Article
+\bibitem[{Kahng et~al.(2017)Kahng, Andrews, Kalro and Chau}]{kahng2017cti}
+\bibinfo{author}{Kahng, M.}, \bibinfo{author}{Andrews, P.Y.},
+  \bibinfo{author}{Kalro, A.}, \bibinfo{author}{Chau, D.H.P.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{A cti v is: Visual exploration of industry-scale deep
+  neural network models}.
+\newblock \bibinfo{journal}{IEEE transactions on visualization and computer
+  graphics} \bibinfo{volume}{24}, \bibinfo{pages}{88--97}.
+%Type = Incollection
+\bibitem[{Kaymak and U{\c{c}}ar(2019)}]{kaymak2019brief}
+\bibinfo{author}{Kaymak, {\c{C}}.}, \bibinfo{author}{U{\c{c}}ar, A.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A brief survey and an application of semantic image
+  segmentation for autonomous driving}, in: \bibinfo{booktitle}{Handbook of
+  Deep Learning Applications}. \bibinfo{publisher}{Springer}, pp.
+  \bibinfo{pages}{161--200}.
+%Type = Article
+\bibitem[{Kliewer and Dokoozlian(2005)}]{kliewer2005leaf}
+\bibinfo{author}{Kliewer, W.M.}, \bibinfo{author}{Dokoozlian, N.K.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Leaf area/crop weight ratios of grapevines: influence
+  on fruit composition and wine quality}.
+\newblock \bibinfo{journal}{American Journal of Enology and Viticulture}
+  \bibinfo{volume}{56}, \bibinfo{pages}{170--181}.
+%Type = Inproceedings
+\bibitem[{Kornblith et~al.(2019)Kornblith, Shlens and Le}]{kornblith2019better}
+\bibinfo{author}{Kornblith, S.}, \bibinfo{author}{Shlens, J.},
+  \bibinfo{author}{Le, Q.V.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Do better imagenet models transfer better?}, in:
+  \bibinfo{booktitle}{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pp. \bibinfo{pages}{2661--2671}.
+%Type = Inproceedings
+\bibitem[{Lampert et~al.(2008)Lampert, Blaschko and
+  Hofmann}]{lampert2008beyond}
+\bibinfo{author}{Lampert, C.H.}, \bibinfo{author}{Blaschko, M.B.},
+  \bibinfo{author}{Hofmann, T.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Beyond sliding windows: Object localization by
+  efficient subwindow search}, in: \bibinfo{booktitle}{2008 IEEE conference on
+  computer vision and pattern recognition}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1--8}.
+%Type = Article
+\bibitem[{Litjens et~al.(2017)Litjens, Kooi, Bejnordi, Setio, Ciompi,
+  Ghafoorian, Van Der~Laak, Van~Ginneken and S{\'a}nchez}]{litjens2017survey}
+\bibinfo{author}{Litjens, G.}, \bibinfo{author}{Kooi, T.},
+  \bibinfo{author}{Bejnordi, B.E.}, \bibinfo{author}{Setio, A.A.A.},
+  \bibinfo{author}{Ciompi, F.}, \bibinfo{author}{Ghafoorian, M.},
+  \bibinfo{author}{Van Der~Laak, J.A.}, \bibinfo{author}{Van~Ginneken, B.},
+  \bibinfo{author}{S{\'a}nchez, C.I.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{A survey on deep learning in medical image analysis}.
+\newblock \bibinfo{journal}{Medical image analysis} \bibinfo{volume}{42},
+  \bibinfo{pages}{60--88}.
+%Type = Inproceedings
+\bibitem[{Long et~al.(2015)Long, Shelhamer and Darrell}]{long2015fully}
+\bibinfo{author}{Long, J.}, \bibinfo{author}{Shelhamer, E.},
+  \bibinfo{author}{Darrell, T.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Fully convolutional networks for semantic
+  segmentation}, in: \bibinfo{booktitle}{Proceedings of the IEEE conference on
+  computer vision and pattern recognition}, pp. \bibinfo{pages}{3431--3440}.
+%Type = Article
+\bibitem[{Lorenz et~al.(1995)Lorenz, Eichhorn, Bleiholder, Klose, Meier and
+  Weber}]{lorenz1995growth}
+\bibinfo{author}{Lorenz, D.}, \bibinfo{author}{Eichhorn, K.},
+  \bibinfo{author}{Bleiholder, H.}, \bibinfo{author}{Klose, R.},
+  \bibinfo{author}{Meier, U.}, \bibinfo{author}{Weber, E.},
+  \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Growth stages of the grapevine: Phenological growth
+  stages of the grapevine (vitis vinifera l. ssp. vinifera)—codes and
+  descriptions according to the extended bbch scale}.
+\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
+  \bibinfo{volume}{1}, \bibinfo{pages}{100--103}.
+%Type = Article
+\bibitem[{Lowe(2004)}]{lowe2004distinctive}
+\bibinfo{author}{Lowe, D.G.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Distinctive image features from scale-invariant
+  keypoints}.
+\newblock \bibinfo{journal}{International journal of computer vision}
+  \bibinfo{volume}{60}, \bibinfo{pages}{91--110}.
+%Type = Article
+\bibitem[{Matese and Di~Gennaro(2015)}]{matese2015technology}
+\bibinfo{author}{Matese, A.}, \bibinfo{author}{Di~Gennaro, S.F.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Technology in precision viticulture: A state of the
+  art review}.
+\newblock \bibinfo{journal}{International journal of wine research}
+  \bibinfo{volume}{7}, \bibinfo{pages}{69--81}.
+%Type = Article
+\bibitem[{May(2000)}]{may2000bud}
+\bibinfo{author}{May, P.}, \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{From bud to berry, with special reference to
+  inflorescence and bunch morphology in vitis vinifera l.}
+\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
+  \bibinfo{volume}{6}, \bibinfo{pages}{82--98}.
+%Type = Inproceedings
+\bibitem[{Ning et~al.(2017)Ning, Zhou, Song and Tang}]{ning2017inception}
+\bibinfo{author}{Ning, C.}, \bibinfo{author}{Zhou, H.}, \bibinfo{author}{Song,
+  Y.}, \bibinfo{author}{Tang, J.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Inception single shot multibox detector for object
+  detection}, in: \bibinfo{booktitle}{2017 IEEE International Conference on
+  Multimedia \& Expo Workshops (ICMEW)}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{549--554}.
+%Type = Article
+\bibitem[{Noyce et~al.(2016)Noyce, Steel, Harper and Wood}]{noyce2016basis}
+\bibinfo{author}{Noyce, P.W.}, \bibinfo{author}{Steel, C.C.},
+  \bibinfo{author}{Harper, J.D.}, \bibinfo{author}{Wood, R.M.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{The basis of defoliation effects on reproductive
+  parameters in vitis vinifera l. cv. chardonnay lies in the latent bud}.
+\newblock \bibinfo{journal}{American Journal of Enology and Viticulture}
+  \bibinfo{volume}{67}, \bibinfo{pages}{199--205}.
+%Type = Inproceedings
+\bibitem[{Nuske et~al.(2011)Nuske, Achar, Bates, Narasimhan and
+  Singh}]{nuske2011yield}
+\bibinfo{author}{Nuske, S.}, \bibinfo{author}{Achar, S.},
+  \bibinfo{author}{Bates, T.}, \bibinfo{author}{Narasimhan, S.},
+  \bibinfo{author}{Singh, S.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Yield estimation in vineyards by visual grape
+  detection}, in: \bibinfo{booktitle}{2011 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{2352--2358}.
+%Type = Inproceedings
+\bibitem[{Oguz et~al.(2017)Oguz, Carass, Pham, Roy, Subbana, Calabresi,
+  Yushkevich, Shinohara and Prince}]{oguz2017dice}
+\bibinfo{author}{Oguz, I.}, \bibinfo{author}{Carass, A.},
+  \bibinfo{author}{Pham, D.L.}, \bibinfo{author}{Roy, S.},
+  \bibinfo{author}{Subbana, N.}, \bibinfo{author}{Calabresi, P.A.},
+  \bibinfo{author}{Yushkevich, P.A.}, \bibinfo{author}{Shinohara, R.T.},
+  \bibinfo{author}{Prince, J.L.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Dice overlap measures for objects of unknown number:
+  application to lesion segmentation}, in: \bibinfo{booktitle}{International
+  MICCAI Brainlesion Workshop}, \bibinfo{organization}{Springer}. pp.
+  \bibinfo{pages}{3--14}.
+%Type = Article
+\bibitem[{Ozdemir et~al.(2017)Ozdemir, Sessiz and
+  Pekitkan}]{ozdemir2017precision}
+\bibinfo{author}{Ozdemir, G.}, \bibinfo{author}{Sessiz, A.},
+  \bibinfo{author}{Pekitkan, F.G.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Precision viticulture tools to production of high
+  quality grapes}.
+\newblock \bibinfo{journal}{Sci. Pap. Ser. B Hortic} \bibinfo{volume}{61},
+  \bibinfo{pages}{209--218}.
+%Type = Article
+\bibitem[{Pan and Yang(2009)}]{pan2009survey}
+\bibinfo{author}{Pan, S.J.}, \bibinfo{author}{Yang, Q.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{A survey on transfer learning}.
+\newblock \bibinfo{journal}{IEEE Transactions on knowledge and data
+  engineering} \bibinfo{volume}{22}, \bibinfo{pages}{1345--1359}.
+%Type = Article
+\bibitem[{Pellegrino et~al.(2005)Pellegrino, Lebon, Simonneau and
+  Wery}]{pellegrino2005towards}
+\bibinfo{author}{Pellegrino, A.}, \bibinfo{author}{Lebon, E.},
+  \bibinfo{author}{Simonneau, T.}, \bibinfo{author}{Wery, J.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Towards a simple indicator of water stress in
+  grapevine (vitis vinifera l.) based on the differential sensitivities of
+  vegetative growth components}.
+\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
+  \bibinfo{volume}{11}, \bibinfo{pages}{306--315}.
+%Type = Article
+\bibitem[{P{\'e}rez et~al.(2017)P{\'e}rez, Bromberg and Diaz}]{perez2017image}
+\bibinfo{author}{P{\'e}rez, D.S.}, \bibinfo{author}{Bromberg, F.},
+  \bibinfo{author}{Diaz, C.A.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Image classification for detection of winter
+  grapevine buds in natural conditions using scale-invariant features
+  transform, bag of features and support vector machines}.
+\newblock \bibinfo{journal}{Computers and electronics in agriculture}
+  \bibinfo{volume}{135}, \bibinfo{pages}{81--95}.
+%Type = Article
+\bibitem[{Poni et~al.(2018)Poni, Gatti, Palliotti, Dai, Duch{\^e}ne, Truong,
+  Ferrara, Matarrese, Gallotta, Bellincontro et~al.}]{poni2018grapevine}
+\bibinfo{author}{Poni, S.}, \bibinfo{author}{Gatti, M.},
+  \bibinfo{author}{Palliotti, A.}, \bibinfo{author}{Dai, Z.},
+  \bibinfo{author}{Duch{\^e}ne, E.}, \bibinfo{author}{Truong, T.T.},
+  \bibinfo{author}{Ferrara, G.}, \bibinfo{author}{Matarrese, A.M.S.},
+  \bibinfo{author}{Gallotta, A.}, \bibinfo{author}{Bellincontro, A.}, et~al.,
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Grapevine quality: A multiple choice issue}.
+\newblock \bibinfo{journal}{Scientia horticulturae} \bibinfo{volume}{234},
+  \bibinfo{pages}{445--462}.
+%Type = Article
+\bibitem[{Reynolds and Heuvel(2009)}]{reynolds2009influence}
+\bibinfo{author}{Reynolds, A.G.}, \bibinfo{author}{Heuvel, J.E.V.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Influence of grapevine training systems on vine
+  growth and fruit composition: a review}.
+\newblock \bibinfo{journal}{American Journal of Enology and Viticulture}
+  \bibinfo{volume}{60}, \bibinfo{pages}{251--268}.
+%Type = Inproceedings
+\bibitem[{Rowley et~al.(1996)Rowley, Baluja and Kanade}]{rowley1996human}
+\bibinfo{author}{Rowley, H.A.}, \bibinfo{author}{Baluja, S.},
+  \bibinfo{author}{Kanade, T.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Human face detection in visual scenes}, in:
+  \bibinfo{booktitle}{Advances in Neural Information Processing Systems}, pp.
+  \bibinfo{pages}{875--881}.
+%Type = Article
+\bibitem[{Rudolph et~al.(2018)Rudolph, Herzog, T{\"o}pfer and
+  Steinhage}]{rudolph2018efficient}
+\bibinfo{author}{Rudolph, R.}, \bibinfo{author}{Herzog, K.},
+  \bibinfo{author}{T{\"o}pfer, R.}, \bibinfo{author}{Steinhage, V.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Efficient identification, localization and
+  quantification of grapevine inflorescences in unprepared field images using
+  fully convolutional networks}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1807.03770} .
+%Type = Article
+\bibitem[{S{\'a}nchez and Dokoozlian(2005)}]{sanchez2005bud}
+\bibinfo{author}{S{\'a}nchez, L.A.}, \bibinfo{author}{Dokoozlian, N.K.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Bud microclimate and fruitfulness in vitis vinifera
+  l.}
+\newblock \bibinfo{journal}{American Journal of Enology and Viticulture}
+  \bibinfo{volume}{56}, \bibinfo{pages}{319--329}.
+%Type = Article
+\bibitem[{Santos et~al.(2020)Santos, de~Souza, dos Santos and
+  Avila}]{santos2020grape}
+\bibinfo{author}{Santos, T.T.}, \bibinfo{author}{de~Souza, L.L.},
+  \bibinfo{author}{dos Santos, A.A.}, \bibinfo{author}{Avila, S.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Grape detection, segmentation, and tracking using
+  deep neural networks and three-dimensional association}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{170}, \bibinfo{pages}{105247}.
+%Type = Article
+\bibitem[{Seng et~al.(2018)Seng, Ang, Schmidtke and Rogiers}]{seng2018computer}
+\bibinfo{author}{Seng, K.P.}, \bibinfo{author}{Ang, L.M.},
+  \bibinfo{author}{Schmidtke, L.M.}, \bibinfo{author}{Rogiers, S.Y.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Computer vision and machine learning for viticulture
+  technology}.
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{6},
+  \bibinfo{pages}{67494--67510}.
+%Type = Article
+\bibitem[{Shelhamer et~al.(2017)Shelhamer, Long and
+  Darrell}]{shelhamer2017fully}
+\bibinfo{author}{Shelhamer, E.}, \bibinfo{author}{Long, J.},
+  \bibinfo{author}{Darrell, T.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Fully convolutional networks for semantic
+  segmentation}.
+\newblock \bibinfo{journal}{IEEE transactions on pattern analysis and machine
+  intelligence} \bibinfo{volume}{39}, \bibinfo{pages}{640--651}.
+%Type = Article
+\bibitem[{Shorten and Khoshgoftaar(2019)}]{shorten2019survey}
+\bibinfo{author}{Shorten, C.}, \bibinfo{author}{Khoshgoftaar, T.M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A survey on image data augmentation for deep
+  learning}.
+\newblock \bibinfo{journal}{Journal of Big Data} \bibinfo{volume}{6},
+  \bibinfo{pages}{60}.
+%Type = Inproceedings
+\bibitem[{Siam et~al.(2018)Siam, Gamal, Abdel-Razek, Yogamani and
+  Jagersand}]{siam2018rtseg}
+\bibinfo{author}{Siam, M.}, \bibinfo{author}{Gamal, M.},
+  \bibinfo{author}{Abdel-Razek, M.}, \bibinfo{author}{Yogamani, S.},
+  \bibinfo{author}{Jagersand, M.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Rtseg: Real-time semantic segmentation comparative
+  study}, in: \bibinfo{booktitle}{2018 25th IEEE International Conference on
+  Image Processing (ICIP)}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1603--1607}.
+%Type = Article
+\bibitem[{Simonyan and Zisserman(2015)}]{Simonyan2015VeryDC}
+\bibinfo{author}{Simonyan, K.}, \bibinfo{author}{Zisserman, A.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Very deep convolutional networks for large-scale
+  image recognition}.
+\newblock \bibinfo{journal}{CoRR} \bibinfo{volume}{abs/1409.1556}.
+%Type = Inproceedings
+\bibitem[{Tardaguila et~al.(2012)Tardaguila, Diago, Blasco, Mill{\'a}n, Cubero,
+  Garc{\'\i}a-Navarrete and Aleixos}]{tardaguila2012automatic}
+\bibinfo{author}{Tardaguila, J.}, \bibinfo{author}{Diago, M.},
+  \bibinfo{author}{Blasco, J.}, \bibinfo{author}{Mill{\'a}n, B.},
+  \bibinfo{author}{Cubero, S.}, \bibinfo{author}{Garc{\'\i}a-Navarrete, O.},
+  \bibinfo{author}{Aleixos, N.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Automatic estimation of the size and weight of
+  grapevine berries by image analysis}, in: \bibinfo{booktitle}{Proc. CIGR
+  AgEng}.
+%Type = Inproceedings
+\bibitem[{Tard{\'a}guila et~al.(2012)Tard{\'a}guila, Diago, Millan, Blasco,
+  Cubero and Aleixos}]{tardaguila2012applications}
+\bibinfo{author}{Tard{\'a}guila, J.}, \bibinfo{author}{Diago, M.P.},
+  \bibinfo{author}{Millan, B.}, \bibinfo{author}{Blasco, J.},
+  \bibinfo{author}{Cubero, S.}, \bibinfo{author}{Aleixos, N.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Applications of computer vision techniques in
+  viticulture to assess canopy features, cluster morphology and berry size},
+  in: \bibinfo{booktitle}{I International Workshop on Vineyard Mechanization
+  and Grape and Wine Quality 978}, pp. \bibinfo{pages}{77--84}.
+%Type = Inproceedings
+\bibitem[{Tarry et~al.(2014)Tarry, Wspanialy, Veres and
+  Moussa}]{tarry2014integrated}
+\bibinfo{author}{Tarry, C.}, \bibinfo{author}{Wspanialy, P.},
+  \bibinfo{author}{Veres, M.}, \bibinfo{author}{Moussa, M.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{An integrated bud detection and localization system
+  for application in greenhouse automation}, in: \bibinfo{booktitle}{2014
+  Canadian Conference on Computer and Robot Vision},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{344--348}.
+%Type = Article
+\bibitem[{Taylor et~al.(2019)Taylor, Dresser, Hickey, Nuske and
+  Bates}]{taylor2019considerations}
+\bibinfo{author}{Taylor, J.A.}, \bibinfo{author}{Dresser, J.},
+  \bibinfo{author}{Hickey, C.C.}, \bibinfo{author}{Nuske, S.},
+  \bibinfo{author}{Bates, T.R.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Considerations on spatial crop load mapping}.
+\newblock \bibinfo{journal}{Australian journal of grape and wine research}
+  \bibinfo{volume}{25}, \bibinfo{pages}{144--155}.
+%Type = Inproceedings
+\bibitem[{Tilgner et~al.(2019)Tilgner, Wagner, Kalischewski, Velten and
+  Kummert}]{tilgner2019multi}
+\bibinfo{author}{Tilgner, S.}, \bibinfo{author}{Wagner, D.},
+  \bibinfo{author}{Kalischewski, K.}, \bibinfo{author}{Velten, J.},
+  \bibinfo{author}{Kummert, A.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Multi-view fusion neural network with application in
+  the manufacturing industry}, in: \bibinfo{booktitle}{2019 IEEE International
+  Symposium on Circuits and Systems (ISCAS)}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1--5}.
+%Type = Book
+\bibitem[{Vapnik(2013)}]{vapnik2013nature}
+\bibinfo{author}{Vapnik, V.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{The nature of statistical learning theory}.
+\newblock \bibinfo{publisher}{Springer science \& business media}.
+%Type = Inproceedings
+\bibitem[{Wang et~al.(2009)Wang, Han and Yan}]{wang2009hog}
+\bibinfo{author}{Wang, X.}, \bibinfo{author}{Han, T.X.}, \bibinfo{author}{Yan,
+  S.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{An hog-lbp human detector with partial occlusion
+  handling}, in: \bibinfo{booktitle}{2009 IEEE 12th international conference on
+  computer vision}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{32--39}.
+%Type = Article
+\bibitem[{Whalley and Shanmuganathan(2013)}]{whalley2013applications}
+\bibinfo{author}{Whalley, J.}, \bibinfo{author}{Shanmuganathan, S.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Applications of image processing in viticulture: A
+  review} .
+%Type = Inproceedings
+\bibitem[{Whelan et~al.(1996)Whelan, McBratney and
+  Viscarra~Rossel}]{whelan1996spatial}
+\bibinfo{author}{Whelan, B.}, \bibinfo{author}{McBratney, A.},
+  \bibinfo{author}{Viscarra~Rossel, R.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Spatial prediction for precision agriculture}, in:
+  \bibinfo{booktitle}{Proceedings of the Third International Conference on
+  Precision Agriculture}, \bibinfo{organization}{Wiley Online Library}. pp.
+  \bibinfo{pages}{331--342}.
+%Type = Inproceedings
+\bibitem[{Xu et~al.(2014)Xu, Xun, Jia and Yang}]{xu2014detection}
+\bibinfo{author}{Xu, S.}, \bibinfo{author}{Xun, Y.}, \bibinfo{author}{Jia, T.},
+  \bibinfo{author}{Yang, Q.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Detection method for the buds on winter vines based
+  on computer vision}, in: \bibinfo{booktitle}{2014 Seventh International
+  Symposium on Computational Intelligence and Design},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{44--48}.
+%Type = Article
+\bibitem[{Zhao et~al.(2018)Zhao, Rong, Liping and Chenlong}]{zhao2018research}
+\bibinfo{author}{Zhao, F.}, \bibinfo{author}{Rong, D.},
+  \bibinfo{author}{Liping, L.}, \bibinfo{author}{Chenlong, L.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Research on stalk crops internodes and buds
+  identification based on computer vision}.
+\newblock \bibinfo{journal}{MS\&E} \bibinfo{volume}{439},
+  \bibinfo{pages}{032080}.
+
+\end{thebibliography}
