@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{59}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -21,16 +21,6 @@
   autonomous selective vineyard sprayer}.
 \newblock \bibinfo{journal}{Intelligent Service Robotics} \bibinfo{volume}{3},
   \bibinfo{pages}{233--243}.
-%Type = Article
-\bibitem[{Borgogno-Mondino et~al.(2018)Borgogno-Mondino, Lessio, Tarricone,
-  Novello and de~Palma}]{borgogno2018comparison}
-\bibinfo{author}{Borgogno-Mondino, E.}, \bibinfo{author}{Lessio, A.},
-  \bibinfo{author}{Tarricone, L.}, \bibinfo{author}{Novello, V.},
-  \bibinfo{author}{de~Palma, L.}, \bibinfo{year}{2018}.
-\newblock \bibinfo{title}{A comparison between multispectral aerial and
-  satellite imagery in precision viticulture}.
-\newblock \bibinfo{journal}{Precision Agriculture} \bibinfo{volume}{19},
-  \bibinfo{pages}{195--217}.
 %Type = Article
 \bibitem[{Bramley(2009)}]{bramley2009lessons}
 \bibinfo{author}{Bramley, R.G.}, \bibinfo{year}{2009}.
@@ -150,6 +140,12 @@
   methods}, in: \bibinfo{booktitle}{Proceedings of the 2nd international
   conference on computer science and electronics engineering},
   \bibinfo{organization}{Atlantis Press}.
+%Type = Book
+\bibitem[{Hartley and Zisserman(2003)}]{hartley2003multiple}
+\bibinfo{author}{Hartley, R.}, \bibinfo{author}{Zisserman, A.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Multiple view geometry in computer vision}.
+\newblock \bibinfo{publisher}{Cambridge university press}.
 %Type = Inproceedings
 \bibitem[{Herzog et~al.(2014a)Herzog, Kicherer and
   T{\"o}pfer}]{herzog2014objective}
@@ -187,14 +183,20 @@
 \newblock \bibinfo{title}{Mobilenets: Efficient convolutional neural networks
   for mobile vision applications}.
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1704.04861} .
-%Type = Article
-\bibitem[{Intrigliolo and Castel(2007)}]{intrigliolo2007evaluation}
-\bibinfo{author}{Intrigliolo, D.}, \bibinfo{author}{Castel, J.},
-  \bibinfo{year}{2007}.
-\newblock \bibinfo{title}{Evaluation of grapevine water status from trunk
-  diameter variations}.
-\newblock \bibinfo{journal}{Irrigation Science} \bibinfo{volume}{26},
-  \bibinfo{pages}{49--59}.
+%Type = Manual
+\bibitem[{Institute(a)}]{awriNDmanual1}
+\bibinfo{author}{Institute, T.A.W.R.}, a.
+\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.1: Measuring Fruit
+  Quality}. \bibinfo{edition}{1} ed.
+\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
+\newblock \bibinfo{note}{Accessed August 2020}.
+%Type = Manual
+\bibitem[{Institute(b)}]{awriNDmanual3}
+\bibinfo{author}{Institute, T.A.W.R.}, b.
+\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.3: Vine Health}.
+  \bibinfo{edition}{1} ed.
+\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
+\newblock \bibinfo{note}{Accessed August 2020}.
 %Type = Article
 \bibitem[{Jaccard(1912)}]{jaccard1912distribution}
 \bibinfo{author}{Jaccard, P.}, \bibinfo{year}{1912}.
@@ -294,6 +296,12 @@
   inflorescence and bunch morphology in vitis vinifera l.}
 \newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
   \bibinfo{volume}{6}, \bibinfo{pages}{82--98}.
+%Type = Book
+\bibitem[{Moons et~al.(2009)Moons, Van~Gool and Vergauwen}]{moons20093d}
+\bibinfo{author}{Moons, T.}, \bibinfo{author}{Van~Gool, L.},
+  \bibinfo{author}{Vergauwen, M.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{3D Reconstruction from Multiple Images: Principles}.
+\newblock \bibinfo{publisher}{Now Publishers Inc}.
 %Type = Inproceedings
 \bibitem[{Ning et~al.(2017)Ning, Zhou, Song and Tang}]{ning2017inception}
 \bibinfo{author}{Ning, C.}, \bibinfo{author}{Zhou, H.}, \bibinfo{author}{Song,
@@ -334,31 +342,11 @@
   MICCAI Brainlesion Workshop}, \bibinfo{organization}{Springer}. pp.
   \bibinfo{pages}{3--14}.
 %Type = Article
-\bibitem[{Ozdemir et~al.(2017)Ozdemir, Sessiz and
-  Pekitkan}]{ozdemir2017precision}
-\bibinfo{author}{Ozdemir, G.}, \bibinfo{author}{Sessiz, A.},
-  \bibinfo{author}{Pekitkan, F.G.}, \bibinfo{year}{2017}.
-\newblock \bibinfo{title}{Precision viticulture tools to production of high
-  quality grapes}.
-\newblock \bibinfo{journal}{Sci. Pap. Ser. B Hortic} \bibinfo{volume}{61},
-  \bibinfo{pages}{209--218}.
-%Type = Article
 \bibitem[{Pan and Yang(2009)}]{pan2009survey}
 \bibinfo{author}{Pan, S.J.}, \bibinfo{author}{Yang, Q.}, \bibinfo{year}{2009}.
 \newblock \bibinfo{title}{A survey on transfer learning}.
 \newblock \bibinfo{journal}{IEEE Transactions on knowledge and data
   engineering} \bibinfo{volume}{22}, \bibinfo{pages}{1345--1359}.
-%Type = Article
-\bibitem[{Pellegrino et~al.(2005)Pellegrino, Lebon, Simonneau and
-  Wery}]{pellegrino2005towards}
-\bibinfo{author}{Pellegrino, A.}, \bibinfo{author}{Lebon, E.},
-  \bibinfo{author}{Simonneau, T.}, \bibinfo{author}{Wery, J.},
-  \bibinfo{year}{2005}.
-\newblock \bibinfo{title}{Towards a simple indicator of water stress in
-  grapevine (vitis vinifera l.) based on the differential sensitivities of
-  vegetative growth components}.
-\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
-  \bibinfo{volume}{11}, \bibinfo{pages}{306--315}.
 %Type = Article
 \bibitem[{P{\'e}rez et~al.(2017)P{\'e}rez, Bromberg and Diaz}]{perez2017image}
 \bibinfo{author}{P{\'e}rez, D.S.}, \bibinfo{author}{Bromberg, F.},
@@ -368,26 +356,6 @@
   transform, bag of features and support vector machines}.
 \newblock \bibinfo{journal}{Computers and electronics in agriculture}
   \bibinfo{volume}{135}, \bibinfo{pages}{81--95}.
-%Type = Article
-\bibitem[{Poni et~al.(2018)Poni, Gatti, Palliotti, Dai, Duch{\^e}ne, Truong,
-  Ferrara, Matarrese, Gallotta, Bellincontro et~al.}]{poni2018grapevine}
-\bibinfo{author}{Poni, S.}, \bibinfo{author}{Gatti, M.},
-  \bibinfo{author}{Palliotti, A.}, \bibinfo{author}{Dai, Z.},
-  \bibinfo{author}{Duch{\^e}ne, E.}, \bibinfo{author}{Truong, T.T.},
-  \bibinfo{author}{Ferrara, G.}, \bibinfo{author}{Matarrese, A.M.S.},
-  \bibinfo{author}{Gallotta, A.}, \bibinfo{author}{Bellincontro, A.}, et~al.,
-  \bibinfo{year}{2018}.
-\newblock \bibinfo{title}{Grapevine quality: A multiple choice issue}.
-\newblock \bibinfo{journal}{Scientia horticulturae} \bibinfo{volume}{234},
-  \bibinfo{pages}{445--462}.
-%Type = Article
-\bibitem[{Reynolds and Heuvel(2009)}]{reynolds2009influence}
-\bibinfo{author}{Reynolds, A.G.}, \bibinfo{author}{Heuvel, J.E.V.},
-  \bibinfo{year}{2009}.
-\newblock \bibinfo{title}{Influence of grapevine training systems on vine
-  growth and fruit composition: a review}.
-\newblock \bibinfo{journal}{American Journal of Enology and Viticulture}
-  \bibinfo{volume}{60}, \bibinfo{pages}{251--268}.
 %Type = Inproceedings
 \bibitem[{Rowley et~al.(1996)Rowley, Baluja and Kanade}]{rowley1996human}
 \bibinfo{author}{Rowley, H.A.}, \bibinfo{author}{Baluja, S.},
@@ -497,15 +465,6 @@
   for application in greenhouse automation}, in: \bibinfo{booktitle}{2014
   Canadian Conference on Computer and Robot Vision},
   \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{344--348}.
-%Type = Article
-\bibitem[{Taylor et~al.(2019)Taylor, Dresser, Hickey, Nuske and
-  Bates}]{taylor2019considerations}
-\bibinfo{author}{Taylor, J.A.}, \bibinfo{author}{Dresser, J.},
-  \bibinfo{author}{Hickey, C.C.}, \bibinfo{author}{Nuske, S.},
-  \bibinfo{author}{Bates, T.R.}, \bibinfo{year}{2019}.
-\newblock \bibinfo{title}{Considerations on spatial crop load mapping}.
-\newblock \bibinfo{journal}{Australian journal of grape and wine research}
-  \bibinfo{volume}{25}, \bibinfo{pages}{144--155}.
 %Type = Inproceedings
 \bibitem[{Tilgner et~al.(2019)Tilgner, Wagner, Kalischewski, Velten and
   Kummert}]{tilgner2019multi}

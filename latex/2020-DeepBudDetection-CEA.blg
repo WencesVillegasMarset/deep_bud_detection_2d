@@ -2,55 +2,62 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 2020-DeepBudDetection-CEA.aux
 The style file: elsarticle-harv.bst
-White space in argument---line 170 of file 2020-DeepBudDetection-CEA.aux
- : \citation{REF
- :               DE 3D RECONSTRUCTION}
-I'm skipping whatever remains of this command
 Database file #1: 2020-DeepBudDetection-CEA.bib
-Warning--I didn't find a database entry for "REF"
+Warning--string name "n.p." is undefined
+--line 679 of file 2020-DeepBudDetection-CEA.bib
+Warning--string name "n.d" is undefined
+--line 680 of file 2020-DeepBudDetection-CEA.bib
+Warning--string name "https://www.awri.com.au/wp-content/uploads/2014/09/on-farm-trials-manual-3-1.pdf" is undefined
+--line 681 of file 2020-DeepBudDetection-CEA.bib
+Warning--string name "n.p." is undefined
+--line 690 of file 2020-DeepBudDetection-CEA.bib
+Warning--string name "n.d" is undefined
+--line 691 of file 2020-DeepBudDetection-CEA.bib
+Warning--string name "https://www.awri.com.au/wp-content/uploads/2014/09/on-farm-trials-manual-3-3.pdf" is undefined
+--line 692 of file 2020-DeepBudDetection-CEA.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty pages in han2013comparison
 Warning--empty pages in tardaguila2012automatic
 Warning--empty journal in whalley2013applications
-You've used 62 entries,
+You've used 59 entries,
             2990 wiz_defined-function locations,
-            982 strings with 18432 characters,
-and the built_in function-call counts, 46832 in all, are:
-= -- 3610
-> -- 1988
-< -- 41
-+ -- 792
-- -- 699
-* -- 5160
-:= -- 6659
-add.period$ -- 162
-call.type$ -- 62
-change.case$ -- 540
-chr.to.int$ -- 61
-cite$ -- 65
-duplicate$ -- 3431
-empty$ -- 3343
-format.name$ -- 896
-if$ -- 8867
-int.to.chr$ -- 2
+            960 strings with 17391 characters,
+and the built_in function-call counts, 43451 in all, are:
+= -- 3361
+> -- 1782
+< -- 42
++ -- 713
+- -- 624
+* -- 4706
+:= -- 6170
+add.period$ -- 155
+call.type$ -- 59
+change.case$ -- 501
+chr.to.int$ -- 57
+cite$ -- 62
+duplicate$ -- 3230
+empty$ -- 3152
+format.name$ -- 806
+if$ -- 8272
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 656
-newline$ -- 301
-num.names$ -- 248
-pop$ -- 1235
+missing$ -- 608
+newline$ -- 288
+num.names$ -- 236
+pop$ -- 1186
 preamble$ -- 1
-purify$ -- 479
+purify$ -- 443
 quote$ -- 0
-skip$ -- 1099
+skip$ -- 1054
 stack$ -- 0
-substring$ -- 2103
-swap$ -- 2574
+substring$ -- 1903
+swap$ -- 2375
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 555
+type$ -- 522
 warning$ -- 3
-while$ -- 312
+while$ -- 289
 width$ -- 0
-write$ -- 866
-(There was 1 error message)
+write$ -- 826
+(There were 9 warnings)

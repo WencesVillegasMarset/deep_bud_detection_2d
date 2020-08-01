@@ -23,19 +23,22 @@
 \emailauthor{fbromberg@frm.utn.edu.ar}{Facundo Bromberg}
 \Newlabel{cor1}{1}
 \citation{long2015fully,shelhamer2017fully}
-\citation{pellegrino2005towards,intrigliolo2007evaluation,reynolds2009influence,matese2015technology,ozdemir2017precision,poni2018grapevine}
-\citation{whelan1996spatial,borgogno2018comparison,taylor2019considerations}
-\citation{lorenz1995growth}
-\citation{kliewer2005leaf}
 \providecommand \oddpage@label [2]{}
 \Newlabel{utn}{a}
 \Newlabel{conicet}{b}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{awriNDmanual1,awriNDmanual3}
+\citation{whelan1996spatial}
+\citation{lorenz1995growth}
+\citation{kliewer2005leaf}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
 \citation{bramley2009lessons}
 \citation{seng2018computer,matese2015technology}
 \citation{may2000bud}
 \citation{diaz2018grapevine}
 \citation{sanchez2005bud,noyce2016basis,collins2020effects}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces A non-exhaustive list of important bud related variables, accompanied by an assessment of the extent to which detection contributes in their measurement. The right-most column indicates what information beyond detection is necessary to complete the measurement, while the middle columns labeled (i), (ii), and (iii) indicate what of the three aspects of the detection it requires: segmentation, correspondence identification, or localization, respectively. \relax }}{4}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:Tabla1}{{1}{4}{A non-exhaustive list of important bud related variables, accompanied by an assessment of the extent to which detection contributes in their measurement. The right-most column indicates what information beyond detection is necessary to complete the measurement, while the middle columns labeled (i), (ii), and (iii) indicate what of the three aspects of the detection it requires: segmentation, correspondence identification, or localization, respectively. \relax }{table.caption.1}{}}
 \citation{seng2018computer}
 \citation{nuske2011yield}
 \citation{tardaguila2012automatic}
@@ -47,35 +50,29 @@
 \citation{ning2017inception}
 \citation{grimm2019adaptable}
 \citation{rudolph2018efficient}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Lista (no exhaustiva) de variables asociadas a las yemas, acompañadas de las sub-operaciones detección requeridas para su medición: (i) segmentación; (ii) individualización; y (iii) localización.\relax }}{4}{table.caption.1}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:Tabla1}{{1}{4}{Lista (no exhaustiva) de variables asociadas a las yemas, acompañadas de las sub-operaciones detección requeridas para su medición: (i) segmentación; (ii) individualización; y (iii) localización.\relax }{table.caption.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related work}{4}{subsection.1.1}\protected@file@percent }
-\newlabel{sec:related}{{1.1}{4}{Related work}{subsection.1.1}{}}
 \citation{tarry2014integrated}
 \citation{zhao2018research}
 \citation{xu2014detection}
 \citation{herzog2014initial}
 \citation{perez2017image}
 \citation{diaz2018grapevine}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related work}{5}{subsection.1.1}\protected@file@percent }
+\newlabel{sec:related}{{1.1}{5}{Related work}{subsection.1.1}{}}
 \citation{xu2014detection}
 \citation{herzog2014initial}
 \citation{perez2017image}
 \citation{diaz2018grapevine}
 \citation{perez2017image}
-\citation{long2015fully}
-\citation{lampert2008beyond}
+\citation{perez2017image}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Materials and Methods}{7}{section.2}\protected@file@percent }
 \newlabel{sec:matmet}{{2}{7}{Materials and Methods}{section.2}{}}
-\citation{perez2017image}
-\citation{perez2017image}
-\citation{vapnik2013nature}
+\citation{long2015fully}
+\citation{lampert2008beyond}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Fully Convolutional Network with MobileNet (FCN-MN)}{8}{subsection.2.1}\protected@file@percent }
+\newlabel{sec:fcn}{{2.1}{8}{Fully Convolutional Network with MobileNet (FCN-MN)}{subsection.2.1}{}}
 \citation{long2015fully}
 \citation{litjens2017survey,garcia2018survey,kaymak2019brief}
 \citation{shelhamer2017fully}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Models}{8}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Fully Convolutional Network with MobileNet (FCN-MN)}{8}{subsubsection.2.1.1}\protected@file@percent }
-\newlabel{sec:fcn}{{2.1.1}{8}{Fully Convolutional Network with MobileNet (FCN-MN)}{subsubsection.2.1.1}{}}
 \citation{shelhamer2017fully}
 \citation{howard2017mobilenets}
 \citation{siam2018rtseg}
@@ -86,8 +83,8 @@
 \citation{long2015fully}
 \citation{shelhamer2017fully}
 \citation{long2015fully,shelhamer2017fully}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Esquema de la arquitectura de red FCN-MN utilizada en este trabajo, basada en la FCN propuesta por \citet  {shelhamer2017fully}, reemplazando su encoder de extracción de features por las redes MobileNet \cite  {howard2017mobilenets}, lo que produce features maps con un factor de downsampling n. Como decoder para la producción del mapa de segmentación se utiliza la red SkipNet \cite  {siam2018rtseg}, implementando las variantes 32s, 16s y 8s.\relax }}{9}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:FCN-MN}{{1}{9}{Esquema de la arquitectura de red FCN-MN utilizada en este trabajo, basada en la FCN propuesta por \citet {shelhamer2017fully}, reemplazando su encoder de extracción de features por las redes MobileNet \cite {howard2017mobilenets}, lo que produce features maps con un factor de downsampling n. Como decoder para la producción del mapa de segmentación se utiliza la red SkipNet \cite {siam2018rtseg}, implementando las variantes 32s, 16s y 8s.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Encoder-decoder architecture}{9}{subsubsection.2.1.1}\protected@file@percent }
+\newlabel{sec:fcnmn}{{2.1.1}{9}{Encoder-decoder architecture}{subsubsection.2.1.1}{}}
 \citation{Simonyan2015VeryDC}
 \citation{howard2017mobilenets}
 \citation{long2015fully}
@@ -95,142 +92,140 @@
 \citation{siam2018rtseg}
 \citation{long2015fully}
 \citation{perez2017image}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Esquema de la arquitectura de red FCN-MN propuesta en este trabajo, basada en la FCN propuesta por \citet  {shelhamer2017fully}, reemplazando su encoder de extracción de features por las redes MobileNet \cite  {howard2017mobilenets}, lo que produce features maps con un factor de downsampling $n$. Como decoder para la producción del mapa de segmentación se utiliza la red SkipNet \cite  {siam2018rtseg}, implementando las variantes 32s, 16s y 8s.\relax }}{10}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:FCN-MN}{{1}{10}{Esquema de la arquitectura de red FCN-MN propuesta en este trabajo, basada en la FCN propuesta por \citet {shelhamer2017fully}, reemplazando su encoder de extracción de features por las redes MobileNet \cite {howard2017mobilenets}, lo que produce features maps con un factor de downsampling $n$. Como decoder para la producción del mapa de segmentación se utiliza la red SkipNet \cite {siam2018rtseg}, implementando las variantes 32s, 16s y 8s.\relax }{figure.caption.2}{}}
 \citation{perez2017image}
 \citation{divvala2009empirical,wang2009hog,chum2007exemplar,ferrari2007groups,dalal2005histograms,rowley1996human}
 \citation{perez2017image}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Sliding Windows y Clasificador de patches (SW-C)}{10}{subsubsection.2.1.2}\protected@file@percent }
-\newlabel{sec:sw}{{2.1.2}{10}{Sliding Windows y Clasificador de patches (SW-C)}{subsubsection.2.1.2}{}}
 \citation{perez2017image}
 \citation{lowe2004distinctive}
 \citation{csurka2004visual}
 \citation{vapnik2013nature}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Sliding Windows detector}{11}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:sw}{{2.2}{11}{Sliding Windows detector}{subsection.2.2}{}}
 \citation{perez2017image}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Entrenamiento de los modelos}{12}{subsection.2.3}\protected@file@percent }
+\newlabel{sec:train}{{2.3}{12}{Entrenamiento de los modelos}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Colección de imágenes}{12}{subsubsection.2.3.1}\protected@file@percent }
+\newlabel{sec:collection}{{2.3.1}{12}{Colección de imágenes}{subsubsection.2.3.1}{}}
 \citation{han2013comparison}
 \citation{pan2009survey}
 \citation{shorten2019survey}
 \citation{howard2017mobilenets}
 \citation{kornblith2019better}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Colección de imágenes}{12}{subsection.2.2}\protected@file@percent }
-\newlabel{sec:corpus}{{2.2}{12}{Colección de imágenes}{subsection.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Entrenamiento de los modelos}{12}{subsection.2.3}\protected@file@percent }
-\newlabel{sec:train}{{2.3}{12}{Entrenamiento de los modelos}{subsection.2.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Entrenamiento enfoque FCN-MN.}{12}{subsubsection.2.3.1}\protected@file@percent }
-\newlabel{sec:fcntrain}{{2.3.1}{12}{Entrenamiento enfoque FCN-MN}{subsubsection.2.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Entrenamiento del enfoque FCN-MN.}{13}{subsubsection.2.3.2}\protected@file@percent }
+\newlabel{sec:fcntrain}{{2.3.2}{13}{Entrenamiento del enfoque FCN-MN}{subsubsection.2.3.2}{}}
 \citation{jaccard1912distribution}
 \citation{perez2017image}
 \citation{perez2017image}
 \citation{perez2017image}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Promedio de IoU sobre las 3 variantes   para cada combinación de parámetros.\relax }}{14}{table.caption.3}\protected@file@percent }
-\newlabel{tab:TablaX}{{2}{14}{Promedio de IoU sobre las 3 variantes \\ para cada combinación de parámetros.\relax }{table.caption.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Entrenamiento enfoque SW-C}{14}{subsubsection.2.3.2}\protected@file@percent }
-\newlabel{sec:swtrain}{{2.3.2}{14}{Entrenamiento enfoque SW-C}{subsubsection.2.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Collection of patches used in this work. The first row corresponds to bud patches. The second and third rows correspond to the non-bud patches.\relax }}{15}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:Figure2}{{2}{15}{Collection of patches used in this work. The first row corresponds to bud patches. The second and third rows correspond to the non-bud patches.\relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental results}{15}{section.3}\protected@file@percent }
-\newlabel{sec:results}{{3}{15}{Experimental results}{section.3}{}}
+\citation{perez2017image}
+\citation{perez2017image}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Promedio de IoU para cada par de valores de optimizer y dropout, calculado a partir del resultado de IoU de cada uno de los cuatro folds sobre cada una de las tres variantesPromedio de IoU en los 4 folds sobre las $3$ variantes   para cada combinación de optimizador y dropout.\relax }}{15}{table.caption.3}\protected@file@percent }
+\newlabel{tab:TablaX}{{2}{15}{Promedio de IoU para cada par de valores de optimizer y dropout, calculado a partir del resultado de IoU de cada uno de los cuatro folds sobre cada una de las tres variantesPromedio de IoU en los 4 folds sobre las $3$ variantes \\ para cada combinación de optimizador y dropout.\relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Entrenamiento enfoque SW}{15}{subsubsection.2.3.3}\protected@file@percent }
+\newlabel{sec:swtrain}{{2.3.3}{15}{Entrenamiento enfoque SW}{subsubsection.2.3.3}{}}
 \citation{oguz2017dice}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Collection of patches used in this work. The first and second rows correspond to bud patches and non-bud patches, respectively. Image extracted from \citet  {perez2017image}.\relax }}{16}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:Figure2}{{2}{16}{Collection of patches used in this work. The first and second rows correspond to bud patches and non-bud patches, respectively. Image extracted from \citet {perez2017image}.\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental results}{16}{section.3}\protected@file@percent }
+\newlabel{sec:results}{{3}{16}{Experimental results}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Performance metrics}{16}{subsection.3.1}\protected@file@percent }
 \newlabel{sec:metrics}{{3.1}{16}{Performance metrics}{subsection.3.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Individualization metrics }{16}{subsubsection.3.1.1}\protected@file@percent }
-\newlabel{subsec:detectmetrics}{{3.1.1}{16}{Individualization metrics}{subsubsection.3.1.1}{}}
-\newlabel{eq:detection-precision}{{1}{17}{Individualization metrics}{equation.3.1}{}}
-\newlabel{eq:detection-recall}{{2}{17}{Individualization metrics}{equation.3.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Segmentation metrics}{17}{subsubsection.3.1.2}\protected@file@percent }
-\newlabel{subsec:segmetrics}{{3.1.2}{17}{Segmentation metrics}{subsubsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Correspondence identification metrics }{16}{subsubsection.3.1.1}\protected@file@percent }
+\newlabel{subsec:detectmetrics}{{3.1.1}{16}{Correspondence identification metrics}{subsubsection.3.1.1}{}}
+\newlabel{eq:detection-precision}{{1}{18}{Correspondence identification metrics}{equation.3.1}{}}
+\newlabel{eq:detection-recall}{{2}{18}{Correspondence identification metrics}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Segmentation metrics}{18}{subsubsection.3.1.2}\protected@file@percent }
+\newlabel{subsec:segmetrics}{{3.1.2}{18}{Segmentation metrics}{subsubsection.3.1.2}{}}
 \citation{dice1945measures}
 \citation{jaccard1912distribution}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Localization metrics}{19}{subsubsection.3.1.3}\protected@file@percent }
-\newlabel{subsec:locmetrics}{{3.1.3}{19}{Localization metrics}{subsubsection.3.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Resultados Sistemáticos}{19}{subsection.3.2}\protected@file@percent }
-\newlabel{sec:resultados}{{3.2}{19}{Resultados Sistemáticos}{subsection.3.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Detailed analysis of individualization metrics}{21}{subsubsection.3.2.1}\protected@file@percent }
-\newlabel{sub:compFCNSW}{{3.2.1}{21}{Detailed analysis of individualization metrics}{subsubsection.3.2.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Individualization, segmentation and localization metrics for the best FCN-MN and SW detection models. Bolded cells denote the best among all the cells in the column corresponding to the same algorithm (i.e., the best among FCN-MN, and the best among SW). Underlined (bolded) cells denote the best overall FCN-MN and SW detection models.\relax }}{22}{table.caption.5}\protected@file@percent }
-\newlabel{tab:TablaXX}{{3}{22}{Individualization, segmentation and localization metrics for the best FCN-MN and SW detection models. Bolded cells denote the best among all the cells in the column corresponding to the same algorithm (i.e., the best among FCN-MN, and the best among SW). Underlined (bolded) cells denote the best overall FCN-MN and SW detection models.\relax }{table.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Precision-Recall scatterplots of the second and third columns of Table\nobreakspace  {}\ref  {tab:TablaXX} discriminating the results for FCN-MN and SW with black and white dots, respectively. Each dot then represents the detection-precision and detection-recall computed over all images of the tests, for some particular configurations of hyperparameters. For FCN-MN, these would be the architecture, with values 8s, 16s and 32s, and threshold $\tau = \{0.1, 0.2, \dots  , 0.9\}$, for a total of $27$ black dots; while for SW these would be the patch sizes $\{100, 200, \dots  , 1000\}$ and voting thresholds $\{1, 2, 3, 4\}$, for a total of a total of 40 white dots.\relax }}{23}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:detection-scatter-plot}{{3}{23}{Precision-Recall scatterplots of the second and third columns of Table~\ref {tab:TablaXX} discriminating the results for FCN-MN and SW with black and white dots, respectively. Each dot then represents the detection-precision and detection-recall computed over all images of the tests, for some particular configurations of hyperparameters. For FCN-MN, these would be the architecture, with values 8s, 16s and 32s, and threshold $\tau = \{0.1, 0.2, \ldots , 0.9\}$, for a total of $27$ black dots; while for SW these would be the patch sizes $\{100, 200, \ldots , 1000\}$ and voting thresholds $\{1, 2, 3, 4\}$, for a total of a total of 40 white dots.\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Histogram reporting the distribution of $S$ for FCN-MN and SW in black and white bars, respectively. Each bar represents the proportion among all models ($27$ for FCN-MN and $40$ for SW) that contains the number of splits indicated by the bin’s label. For instance, the first (from left to right) white bar indicates that almost $14\%$ out of the $40$ SW models contains between $0$ to $5$ splits. \relax }}{24}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:number-of-split}{{4}{24}{Histogram reporting the distribution of $S$ for FCN-MN and SW in black and white bars, respectively. Each bar represents the proportion among all models ($27$ for FCN-MN and $40$ for SW) that contains the number of splits indicated by the bin’s label. For instance, the first (from left to right) white bar indicates that almost $14\%$ out of the $40$ SW models contains between $0$ to $5$ splits. \relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Detailed analysis of segmentation metrics}{24}{subsubsection.3.2.2}\protected@file@percent }
-\newlabel{fig:XXX-a}{{5a}{25}{\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:XXX-a}{{a}{25}{\relax }{figure.caption.8}{}}
-\newlabel{fig:XXX-b}{{5b}{25}{\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:XXX-b}{{b}{25}{\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Segmentation Precision-Recall scatterplots reporting the results for FCN-MN and SW in black and white, respectively, with dots representing the average of segmentation precision and segmentation recall over all images in the test set (and bars representing standard deviations), with one dot per configuration of hyperparameters ($27$ for FCN-MN and $40$ for SW). In (a), the averages were computed over the segmentation precision and recall of the correctly detected components, while in (b), the averages were computed over the segmentation precision and recall of the split components. Standar deviations.\relax }}{25}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:XXX}{{5}{25}{Segmentation Precision-Recall scatterplots reporting the results for FCN-MN and SW in black and white, respectively, with dots representing the average of segmentation precision and segmentation recall over all images in the test set (and bars representing standard deviations), with one dot per configuration of hyperparameters ($27$ for FCN-MN and $40$ for SW). In (a), the averages were computed over the segmentation precision and recall of the correctly detected components, while in (b), the averages were computed over the segmentation precision and recall of the split components. Standar deviations.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces TODO:redactar\relax }}{26}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:AAA}{{6}{26}{TODO:redactar\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Detailed analysis of localization metrics}{26}{subsubsection.3.2.3}\protected@file@percent }
-\citation{REF}
-\citation{REF}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces TODO:redactar\relax }}{27}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:AAA_ND}{{7}{27}{TODO:redactar\relax }{figure.caption.10}{}}
-\newlabel{sec:discussion}{{3.2.3}{27}{Detailed analysis of localization metrics}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Localization metrics}{20}{subsubsection.3.1.3}\protected@file@percent }
+\newlabel{subsec:locmetrics}{{3.1.3}{20}{Localization metrics}{subsubsection.3.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Results}{20}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:resultados}{{3.2}{20}{Results}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Detailed analysis of correspondence identification metrics}{22}{subsubsection.3.2.1}\protected@file@percent }
+\newlabel{sub:compFCNSW}{{3.2.1}{22}{Detailed analysis of correspondence identification metrics}{subsubsection.3.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Correspondence identification, segmentation and localization metrics for the best FCN-MN and SW detection models. Each column shows two bolded cells, corresponding to the cell with better metric among all FCN-MN rows, and the cell with better metric among the SW rows. The larger of the two has been underlined, representing the best among all combined models, i.e., the best of the column.\relax }}{23}{table.caption.5}\protected@file@percent }
+\newlabel{tab:TablaXX}{{3}{23}{Correspondence identification, segmentation and localization metrics for the best FCN-MN and SW detection models. Each column shows two bolded cells, corresponding to the cell with better metric among all FCN-MN rows, and the cell with better metric among the SW rows. The larger of the two has been underlined, representing the best among all combined models, i.e., the best of the column.\relax }{table.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Precision-Recall scatterplots of the second and third columns of Table$\sim $\ref  {tab:TablaXX} discriminating the results for FCN-MN and SW with black and white dots, respectively. Each dot then represents the detection-precision and detection-recall computed over all images of the tests, for some particular configurations of hyperparameters. For FCN-MN, these would be the architecture, with values 8s, 16s and 32s, and threshold $\tau = \{0.1, 0.2, \dots  , 0.9\}$, for a total of $27$ black dots; while for SW these would be the patch sizes $\{100, 200, \dots  , 1000\}$ and voting thresholds $\{1, 2, 3, 4\}$, for a total of a total of 40 white dots.\relax }}{24}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:detection-scatter-plot}{{3}{24}{Precision-Recall scatterplots of the second and third columns of Table$\sim $\ref {tab:TablaXX} discriminating the results for FCN-MN and SW with black and white dots, respectively. Each dot then represents the detection-precision and detection-recall computed over all images of the tests, for some particular configurations of hyperparameters. For FCN-MN, these would be the architecture, with values 8s, 16s and 32s, and threshold $\tau = \{0.1, 0.2, \ldots , 0.9\}$, for a total of $27$ black dots; while for SW these would be the patch sizes $\{100, 200, \ldots , 1000\}$ and voting thresholds $\{1, 2, 3, 4\}$, for a total of a total of 40 white dots.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Histogram reporting the distribution of $S$ for FCN-MN and SW in black and white bars, respectively. Each bar represents the proportion among all models ($27$ for FCN-MN and $40$ for SW) that contains the number of splits indicated by the bin’s label. For instance, the first (from left to right) white bar indicates that almost $14\%$ out of the $40$ SW models contains between $0$ to $5$ splits. \relax }}{25}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:number-of-split}{{4}{25}{Histogram reporting the distribution of $S$ for FCN-MN and SW in black and white bars, respectively. Each bar represents the proportion among all models ($27$ for FCN-MN and $40$ for SW) that contains the number of splits indicated by the bin’s label. For instance, the first (from left to right) white bar indicates that almost $14\%$ out of the $40$ SW models contains between $0$ to $5$ splits. \relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Detailed analysis of segmentation metrics}{26}{subsubsection.3.2.2}\protected@file@percent }
+\newlabel{fig:XXX-a}{{5a}{27}{\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:XXX-a}{{a}{27}{\relax }{figure.caption.8}{}}
+\newlabel{fig:XXX-b}{{5b}{27}{\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:XXX-b}{{b}{27}{\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Segmentation Precision-Recall scatterplots reporting the results for FCN-MN and SW in black and white, respectively, with dots representing the average of segmentation precision and segmentation recall over all images in the test set (and bars representing standard deviations), with one dot per configuration of hyperparameters ($27$ for FCN-MN and $40$ for SW). In (a), the averages were computed over the segmentation precision and recall of the correctly detected components, while in (b), the averages were computed over the segmentation precision and recall of the split components. Standar deviations.\relax }}{27}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:XXX}{{5}{27}{Segmentation Precision-Recall scatterplots reporting the results for FCN-MN and SW in black and white, respectively, with dots representing the average of segmentation precision and segmentation recall over all images in the test set (and bars representing standard deviations), with one dot per configuration of hyperparameters ($27$ for FCN-MN and $40$ for SW). In (a), the averages were computed over the segmentation precision and recall of the correctly detected components, while in (b), the averages were computed over the segmentation precision and recall of the split components. Standar deviations.\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Two histograms of mean normalized area $NA$ values reported for false alarms, one for the FCN-MN detection models (black) and one for the SW models (in white). Bars in the histogram represent the proportion of detection models whose mean $NA$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar\relax }}{27}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:AAA}{{6}{27}{Two histograms of mean normalized area $NA$ values reported for false alarms, one for the FCN-MN detection models (black) and one for the SW models (in white). Bars in the histogram represent the proportion of detection models whose mean $NA$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Detailed analysis of localization metrics}{28}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion and Conclusions}{28}{section.4}\protected@file@percent }
+\newlabel{sec:discussion}{{4}{28}{Discussion and Conclusions}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Two histograms of mean normalized distance $ND$ values reported for false alarms, one for FCN-MN (black) and one for SW (white). Bars in the histogram represent the proportion of detection models ($27$ for FCN-MN and $40$ for SW) whose mean $ND$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar\relax }}{29}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:AAA_ND}{{7}{29}{Two histograms of mean normalized distance $ND$ values reported for false alarms, one for FCN-MN (black) and one for SW (white). Bars in the histogram represent the proportion of detection models ($27$ for FCN-MN and $40$ for SW) whose mean $ND$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar\relax }{figure.caption.10}{}}
 \citation{santos2020grape}
-\citation{REF DE 3D RECONSTRUCTION}
+\citation{hartley2003multiple,moons20093d}
 \citation{diaz2018grapevine}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{31}{section.4}\protected@file@percent }
-\newlabel{sec:conclusion}{{4}{31}{Conclusions}{section.4}{}}
 \bibdata{2020-DeepBudDetection-CEA}
 \bibcite{berenstein2010grape}{{1}{2010}{{Berenstein et~al.}}{{Berenstein, Shahar, Shapiro and Edan}}}
-\bibcite{borgogno2018comparison}{{2}{2018}{{Borgogno-Mondino et~al.}}{{Borgogno-Mondino, Lessio, Tarricone, Novello and de~Palma}}}
-\bibcite{bramley2009lessons}{{3}{2009}{{Bramley}}{{}}}
-\bibcite{chum2007exemplar}{{4}{2007}{{Chum and Zisserman}}{{}}}
-\bibcite{collins2020effects}{{5}{2020}{{Collins et~al.}}{{Collins, Wang, Lesefko, De~Bei and Fuentes}}}
-\bibcite{csurka2004visual}{{6}{2004}{{Csurka et~al.}}{{Csurka, Dance, Fan, Willamowski and Bray}}}
-\bibcite{dalal2005histograms}{{7}{2005}{{{Dalal} and {Triggs}}}{{}}}
-\bibcite{diago2012grapevine}{{8}{2012}{{Diago et~al.}}{{Diago, Correa, Mill{\'a}n, Barreiro, Valero and Tardaguila}}}
-\bibcite{diaz2018grapevine}{{9}{2018}{{D{\'\i }az et~al.}}{{D{\'\i }az, P{\'e}rez, Miatello and Bromberg}}}
-\bibcite{dice1945measures}{{10}{1945}{{Dice}}{{}}}
-\bibcite{divvala2009empirical}{{11}{2009}{{Divvala et~al.}}{{Divvala, Hoiem, Hays, Efros and Hebert}}}
-\bibcite{ferrari2007groups}{{12}{2007}{{Ferrari et~al.}}{{Ferrari, Fevrier, Jurie and Schmid}}}
-\bibcite{garcia2018survey}{{13}{2018}{{Garcia-Garcia et~al.}}{{Garcia-Garcia, Orts-Escolano, Oprea, Villena-Martinez, Martinez-Gonzalez and Garcia-Rodriguez}}}
-\bibcite{grimm2019adaptable}{{14}{2019}{{Grimm et~al.}}{{Grimm, Herzog, Rist, Kicherer, T{\"o}pfer and Steinhage}}}
-\bibcite{han2013comparison}{{15}{2013}{{Han}}{{}}}
+\bibcite{bramley2009lessons}{{2}{2009}{{Bramley}}{{}}}
+\bibcite{chum2007exemplar}{{3}{2007}{{Chum and Zisserman}}{{}}}
+\bibcite{collins2020effects}{{4}{2020}{{Collins et~al.}}{{Collins, Wang, Lesefko, De~Bei and Fuentes}}}
+\bibcite{csurka2004visual}{{5}{2004}{{Csurka et~al.}}{{Csurka, Dance, Fan, Willamowski and Bray}}}
+\bibcite{dalal2005histograms}{{6}{2005}{{{Dalal} and {Triggs}}}{{}}}
+\bibcite{diago2012grapevine}{{7}{2012}{{Diago et~al.}}{{Diago, Correa, Mill{\'a}n, Barreiro, Valero and Tardaguila}}}
+\bibcite{diaz2018grapevine}{{8}{2018}{{D{\'\i }az et~al.}}{{D{\'\i }az, P{\'e}rez, Miatello and Bromberg}}}
+\bibcite{dice1945measures}{{9}{1945}{{Dice}}{{}}}
+\bibcite{divvala2009empirical}{{10}{2009}{{Divvala et~al.}}{{Divvala, Hoiem, Hays, Efros and Hebert}}}
+\bibcite{ferrari2007groups}{{11}{2007}{{Ferrari et~al.}}{{Ferrari, Fevrier, Jurie and Schmid}}}
+\bibcite{garcia2018survey}{{12}{2018}{{Garcia-Garcia et~al.}}{{Garcia-Garcia, Orts-Escolano, Oprea, Villena-Martinez, Martinez-Gonzalez and Garcia-Rodriguez}}}
+\bibcite{grimm2019adaptable}{{13}{2019}{{Grimm et~al.}}{{Grimm, Herzog, Rist, Kicherer, T{\"o}pfer and Steinhage}}}
+\bibcite{han2013comparison}{{14}{2013}{{Han}}{{}}}
+\bibcite{hartley2003multiple}{{15}{2003}{{Hartley and Zisserman}}{{}}}
 \bibcite{herzog2014objective}{{16}{2014a}{{Herzog et~al.}}{{Herzog, Kicherer and T{\"o}pfer}}}
 \bibcite{herzog2014initial}{{17}{2014b}{{Herzog et~al.}}{{}}}
 \bibcite{hirano2006industry}{{18}{2006}{{Hirano et~al.}}{{Hirano, Garcia, Sukthankar and Hoogs}}}
 \bibcite{howard2017mobilenets}{{19}{2017}{{Howard et~al.}}{{Howard, Zhu, Chen, Kalenichenko, Wang, Weyand, Andreetto and Adam}}}
-\bibcite{intrigliolo2007evaluation}{{20}{2007}{{Intrigliolo and Castel}}{{}}}
-\bibcite{jaccard1912distribution}{{21}{1912}{{Jaccard}}{{}}}
-\bibcite{kahng2017cti}{{22}{2017}{{Kahng et~al.}}{{Kahng, Andrews, Kalro and Chau}}}
-\bibcite{kaymak2019brief}{{23}{2019}{{Kaymak and U{\c {c}}ar}}{{}}}
-\bibcite{kliewer2005leaf}{{24}{2005}{{Kliewer and Dokoozlian}}{{}}}
-\bibcite{kornblith2019better}{{25}{2019}{{Kornblith et~al.}}{{Kornblith, Shlens and Le}}}
-\bibcite{lampert2008beyond}{{26}{2008}{{Lampert et~al.}}{{Lampert, Blaschko and Hofmann}}}
-\bibcite{litjens2017survey}{{27}{2017}{{Litjens et~al.}}{{Litjens, Kooi, Bejnordi, Setio, Ciompi, Ghafoorian, Van Der~Laak, Van~Ginneken and S{\'a}nchez}}}
-\bibcite{long2015fully}{{28}{2015}{{Long et~al.}}{{Long, Shelhamer and Darrell}}}
-\bibcite{lorenz1995growth}{{29}{1995}{{Lorenz et~al.}}{{Lorenz, Eichhorn, Bleiholder, Klose, Meier and Weber}}}
-\bibcite{lowe2004distinctive}{{30}{2004}{{Lowe}}{{}}}
-\bibcite{matese2015technology}{{31}{2015}{{Matese and Di~Gennaro}}{{}}}
-\bibcite{may2000bud}{{32}{2000}{{May}}{{}}}
-\bibcite{ning2017inception}{{33}{2017}{{Ning et~al.}}{{Ning, Zhou, Song and Tang}}}
-\bibcite{noyce2016basis}{{34}{2016}{{Noyce et~al.}}{{Noyce, Steel, Harper and Wood}}}
-\bibcite{nuske2011yield}{{35}{2011}{{Nuske et~al.}}{{Nuske, Achar, Bates, Narasimhan and Singh}}}
-\bibcite{oguz2017dice}{{36}{2017}{{Oguz et~al.}}{{Oguz, Carass, Pham, Roy, Subbana, Calabresi, Yushkevich, Shinohara and Prince}}}
-\bibcite{ozdemir2017precision}{{37}{2017}{{Ozdemir et~al.}}{{Ozdemir, Sessiz and Pekitkan}}}
-\bibcite{pan2009survey}{{38}{2009}{{Pan and Yang}}{{}}}
-\bibcite{pellegrino2005towards}{{39}{2005}{{Pellegrino et~al.}}{{Pellegrino, Lebon, Simonneau and Wery}}}
+\bibcite{awriNDmanual1}{{20}{a}{{Institute}}{{}}}
+\bibcite{awriNDmanual3}{{21}{b}{{Institute}}{{}}}
+\bibcite{jaccard1912distribution}{{22}{1912}{{Jaccard}}{{}}}
+\bibcite{kahng2017cti}{{23}{2017}{{Kahng et~al.}}{{Kahng, Andrews, Kalro and Chau}}}
+\bibcite{kaymak2019brief}{{24}{2019}{{Kaymak and U{\c {c}}ar}}{{}}}
+\bibcite{kliewer2005leaf}{{25}{2005}{{Kliewer and Dokoozlian}}{{}}}
+\bibcite{kornblith2019better}{{26}{2019}{{Kornblith et~al.}}{{Kornblith, Shlens and Le}}}
+\bibcite{lampert2008beyond}{{27}{2008}{{Lampert et~al.}}{{Lampert, Blaschko and Hofmann}}}
+\bibcite{litjens2017survey}{{28}{2017}{{Litjens et~al.}}{{Litjens, Kooi, Bejnordi, Setio, Ciompi, Ghafoorian, Van Der~Laak, Van~Ginneken and S{\'a}nchez}}}
+\bibcite{long2015fully}{{29}{2015}{{Long et~al.}}{{Long, Shelhamer and Darrell}}}
+\bibcite{lorenz1995growth}{{30}{1995}{{Lorenz et~al.}}{{Lorenz, Eichhorn, Bleiholder, Klose, Meier and Weber}}}
+\bibcite{lowe2004distinctive}{{31}{2004}{{Lowe}}{{}}}
+\bibcite{matese2015technology}{{32}{2015}{{Matese and Di~Gennaro}}{{}}}
+\bibcite{may2000bud}{{33}{2000}{{May}}{{}}}
+\bibcite{moons20093d}{{34}{2009}{{Moons et~al.}}{{Moons, Van~Gool and Vergauwen}}}
+\bibcite{ning2017inception}{{35}{2017}{{Ning et~al.}}{{Ning, Zhou, Song and Tang}}}
+\bibcite{noyce2016basis}{{36}{2016}{{Noyce et~al.}}{{Noyce, Steel, Harper and Wood}}}
+\bibcite{nuske2011yield}{{37}{2011}{{Nuske et~al.}}{{Nuske, Achar, Bates, Narasimhan and Singh}}}
+\bibcite{oguz2017dice}{{38}{2017}{{Oguz et~al.}}{{Oguz, Carass, Pham, Roy, Subbana, Calabresi, Yushkevich, Shinohara and Prince}}}
+\bibcite{pan2009survey}{{39}{2009}{{Pan and Yang}}{{}}}
 \bibcite{perez2017image}{{40}{2017}{{P{\'e}rez et~al.}}{{P{\'e}rez, Bromberg and Diaz}}}
-\bibcite{poni2018grapevine}{{41}{2018}{{Poni et~al.}}{{Poni, Gatti, Palliotti, Dai, Duch{\^e}ne, Truong, Ferrara, Matarrese, Gallotta, Bellincontro et~al.}}}
-\bibcite{reynolds2009influence}{{42}{2009}{{Reynolds and Heuvel}}{{}}}
-\bibcite{rowley1996human}{{43}{1996}{{Rowley et~al.}}{{Rowley, Baluja and Kanade}}}
-\bibcite{rudolph2018efficient}{{44}{2018}{{Rudolph et~al.}}{{Rudolph, Herzog, T{\"o}pfer and Steinhage}}}
-\bibcite{sanchez2005bud}{{45}{2005}{{S{\'a}nchez and Dokoozlian}}{{}}}
-\bibcite{santos2020grape}{{46}{2020}{{Santos et~al.}}{{Santos, de~Souza, dos Santos and Avila}}}
-\bibcite{seng2018computer}{{47}{2018}{{Seng et~al.}}{{Seng, Ang, Schmidtke and Rogiers}}}
-\bibcite{shelhamer2017fully}{{48}{2017}{{Shelhamer et~al.}}{{Shelhamer, Long and Darrell}}}
-\bibcite{shorten2019survey}{{49}{2019}{{Shorten and Khoshgoftaar}}{{}}}
-\bibcite{siam2018rtseg}{{50}{2018}{{Siam et~al.}}{{Siam, Gamal, Abdel-Razek, Yogamani and Jagersand}}}
-\bibcite{Simonyan2015VeryDC}{{51}{2015}{{Simonyan and Zisserman}}{{}}}
-\bibcite{tardaguila2012automatic}{{52}{2012}{{Tardaguila et~al.}}{{Tardaguila, Diago, Blasco, Mill{\'a}n, Cubero, Garc{\'\i }a-Navarrete and Aleixos}}}
-\bibcite{tardaguila2012applications}{{53}{2012}{{Tard{\'a}guila et~al.}}{{Tard{\'a}guila, Diago, Millan, Blasco, Cubero and Aleixos}}}
-\bibcite{tarry2014integrated}{{54}{2014}{{Tarry et~al.}}{{Tarry, Wspanialy, Veres and Moussa}}}
-\bibcite{taylor2019considerations}{{55}{2019}{{Taylor et~al.}}{{Taylor, Dresser, Hickey, Nuske and Bates}}}
-\bibcite{tilgner2019multi}{{56}{2019}{{Tilgner et~al.}}{{Tilgner, Wagner, Kalischewski, Velten and Kummert}}}
-\bibcite{vapnik2013nature}{{57}{2013}{{Vapnik}}{{}}}
-\bibcite{wang2009hog}{{58}{2009}{{Wang et~al.}}{{Wang, Han and Yan}}}
-\bibcite{whalley2013applications}{{59}{2013}{{Whalley and Shanmuganathan}}{{}}}
-\bibcite{whelan1996spatial}{{60}{1996}{{Whelan et~al.}}{{Whelan, McBratney and Viscarra~Rossel}}}
-\bibcite{xu2014detection}{{61}{2014}{{Xu et~al.}}{{Xu, Xun, Jia and Yang}}}
-\bibcite{zhao2018research}{{62}{2018}{{Zhao et~al.}}{{Zhao, Rong, Liping and Chenlong}}}
+\bibcite{rowley1996human}{{41}{1996}{{Rowley et~al.}}{{Rowley, Baluja and Kanade}}}
+\bibcite{rudolph2018efficient}{{42}{2018}{{Rudolph et~al.}}{{Rudolph, Herzog, T{\"o}pfer and Steinhage}}}
+\bibcite{sanchez2005bud}{{43}{2005}{{S{\'a}nchez and Dokoozlian}}{{}}}
+\bibcite{santos2020grape}{{44}{2020}{{Santos et~al.}}{{Santos, de~Souza, dos Santos and Avila}}}
+\bibcite{seng2018computer}{{45}{2018}{{Seng et~al.}}{{Seng, Ang, Schmidtke and Rogiers}}}
+\bibcite{shelhamer2017fully}{{46}{2017}{{Shelhamer et~al.}}{{Shelhamer, Long and Darrell}}}
+\bibcite{shorten2019survey}{{47}{2019}{{Shorten and Khoshgoftaar}}{{}}}
+\bibcite{siam2018rtseg}{{48}{2018}{{Siam et~al.}}{{Siam, Gamal, Abdel-Razek, Yogamani and Jagersand}}}
+\bibcite{Simonyan2015VeryDC}{{49}{2015}{{Simonyan and Zisserman}}{{}}}
+\bibcite{tardaguila2012automatic}{{50}{2012}{{Tardaguila et~al.}}{{Tardaguila, Diago, Blasco, Mill{\'a}n, Cubero, Garc{\'\i }a-Navarrete and Aleixos}}}
+\bibcite{tardaguila2012applications}{{51}{2012}{{Tard{\'a}guila et~al.}}{{Tard{\'a}guila, Diago, Millan, Blasco, Cubero and Aleixos}}}
+\bibcite{tarry2014integrated}{{52}{2014}{{Tarry et~al.}}{{Tarry, Wspanialy, Veres and Moussa}}}
+\bibcite{tilgner2019multi}{{53}{2019}{{Tilgner et~al.}}{{Tilgner, Wagner, Kalischewski, Velten and Kummert}}}
+\bibcite{vapnik2013nature}{{54}{2013}{{Vapnik}}{{}}}
+\bibcite{wang2009hog}{{55}{2009}{{Wang et~al.}}{{Wang, Han and Yan}}}
+\bibcite{whalley2013applications}{{56}{2013}{{Whalley and Shanmuganathan}}{{}}}
+\bibcite{whelan1996spatial}{{57}{1996}{{Whelan et~al.}}{{Whelan, McBratney and Viscarra~Rossel}}}
+\bibcite{xu2014detection}{{58}{2014}{{Xu et~al.}}{{Xu, Xun, Jia and Yang}}}
+\bibcite{zhao2018research}{{59}{2018}{{Zhao et~al.}}{{Zhao, Rong, Liping and Chenlong}}}

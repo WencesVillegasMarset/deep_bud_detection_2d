@@ -15,6 +15,9 @@ pdf:
 	cp -u ../figures/*.png ./figures/
 	pdflatex -synctex=1 -interaction=nonstopmode $(BASE).tex && bibtex $(BASE)
 
+generatefigures:
+	./generate_plots.sh	
+
 clean:
 	rm -f *.dvi *.bbl *.blg *.log *.out *.aux *.gz *.spl $(BASE).pdf
 
