@@ -59,7 +59,7 @@
 		
 		\begin{abstract}
 			%Intro / Motivación - Desafío - Técnicas - Resultados 
-			Visual inspection is a task necessary to measure relevant variables in viticulture and is susceptible to being automated with computer vision methods. Bud detection is central for various of these tasks such as: measurement of buds’ sunlight exposure, autonomous pruning, bud counting, type-of-bud classification, bud geometric characterization, internode length, and bud development stage, among others. This paper presents a method for grapevine bud detection based on a \emph{Fully Convolutional Networks Mobile-Net} architecture. To validate its performance we compare it on the detection task with the known state-of-the-art method for bud detection, showing improvements over three of the aspects of detection: \emph{segmentation}, \emph{correspondence identification} and \emph{localization}. In its best version of configuration parameters, our approach showed a detection precision of $95.6\%$, detection recall of $93.6\%$, and a mean Dice coefficient of $89.1\%$ for correct detection segmentations. The paper concludes with a discussion on the  advantages of our approach for real-world applications.
+			Visual inspection is a task necessary to measure relevant variables in viticulture and is susceptible to being automated with computer vision methods. Bud detection is central for various of these tasks such as: measurement of buds’ sunlight exposure, autonomous pruning, bud counting, type-of-bud classification, bud geometric characterization, internode length, and bud development stage, among others. This paper presents a method for grapevine bud detection based on a \emph{Fully Convolutional Networks Mobile-Net} architecture. To validate its performance we compare it on the detection task with the known state-of-the-art method for bud detection, showing improvements over three of the aspects of detection: \emph{segmentation}, \emph{correspondence identification} and \emph{localization}. In its best version of configuration parameters, our approach showed a detection precision of $95.6\%$, detection recall of $93.6\%$, and a mean Dice coefficient of $89.1\%$ for correct detection segmentations.  error of the false detections (i.e., not overlapping with the true bud) of $1.1$ mean bud diameters. The paper concludes with a discussion on the  advantages of our approach for real-world applications.
 		\end{abstract}
 		
 		\begin{keyword}
@@ -96,7 +96,6 @@
 	Table$\sim$\ref{tab:Tabla1} shows a non-exhaustive list of the most important bud related variables currently measured by vineyard managers \citep{sanchez2005bud, noyce2016basis, collins2020effects}, accompanied by an assessment of the extent to which detection contributes in their measurement. The right-most column indicates what information beyond detection  is necessary to complete the measurement, while the middle columns labeled (i), (ii), and (iii) indicate what specific aspects of the detection are required for that variable: (i) whether it requires a good  \emph{segmentation}, i.e., the discrimination of which pixels in the scene correspond to buds and which ones correspond to the background (no-bud); ii) a good \emph{correspondence identification}, i.e., discrimination of bud pixels as belonging to different buds; or (iii) a good \emph{localization}, i.e., the localization of the bud within the scene; respectively.
 	%
 	For instance, tomemos por caso la variable \emph{buds number}. De ser posible identificar correctamente las correspondencias, the buds number coincide directamente con el conteo de detecciones. Por el contrario, para \emph{type-of-bud classification}, además de identificar correspondencias, la segmentación de la parte de la imagen perteneciente a la yema es necesaria para poder así alimentar a un clasificador con la información visual relevante, minimizando el ruido producto de pixeles del background. Por último, para medir la \emph{incidence of sunlight on the bud}, no es necesaria la segmentación, sino tan solo una buena localización de la yema, además de la leaves 3D superficial geometry.
-	
 	
 	
 	
@@ -246,7 +245,6 @@
 	Para el entrenamiento de las tres variantes de FCN-MN, la 8s, 16s, y 32s, se requiere especificar el \emph{método de optimización} y el valor de \emph{dropout}, dos parámetros típicamente definidos por el usuario. En este trabajo, los métodos de optimización que se tuvieron en cuenta fueron: \emph{Adam} con parámetros learning rate = $0.001$, $beta1 = 0.9$ y $beta2 = 0.999$; \emph{RMSProp} con parámetros learning rate = $0.001$ y $rho = 0.9$; y \emph{Stochastic Gradient Descent} con parámetros learning rate = $0.0001$ y $momentum = 0.9$. Para el caso de dropout se consideraron dos valores: $0.5$ y $0.001$. Estos valores fueron preseleccionados por experimentaciones preliminares que no se discuten aquí.
 	%
 	La mejor combinación de método de optimización y dropout se determinó en tiempo de entrenamiento sobre un conjunto de validación, utilizando el enfoque \emph{4-fold cross validation} por 60 epochs y batchsize igual a $4$, variando sobre los tres métodos de optimización y los dos valores de dropout. Los valores seleccionados fueron aquellos que maximizan el promedio de la Jaccard’s \emph{Intersection-over-Union} (IoU) \citep{jaccard1912distribution},  en los 4-folds sobre las 3 variantes, siendo IoU una medida de evaluación típica en problemas de segmentación (ver sección \ref{subsec:segmetrics}). Para cada par de valores de optimizer y dropout se calcula el promedio tomando el resultado de IoU de cada uno de los cuatro folds sobre cada una de las tres variantes. Observamos en la Tabla$\sim$\ref{tab:TablaX} que la combinación de parámetros con la que se alcanza mayor IoU promedio es RMSProp con dropout de $0.001$. 
-	
 	
 	\begin{table}[]
 		\centering
@@ -535,7 +533,7 @@
 	\begin{figure}%
 		\centering
 		\includegraphics[width=\textwidth]{figures/AAA_mean_relative_area_fcn_vs_sw.png}%
-		\caption{Two histograms of mean normalized area $NA$ values reported for false alarms, one for the FCN-MN detection models (black) and one for the SW models (in white). Bars in the histogram represent the proportion of detection models whose mean $NA$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar}
+		\caption{Two histograms of mean normalized area $NA$ values reported for false alarms, one for the FCN-MN detection models (black) and one for the SW models (in white). Bars in the histogram represent the proportion of detection models whose mean $NA$ (over all false alarm components of all images) falls within the interval of the bin.}
 		\label{fig:AAA}
 	\end{figure}
 	
@@ -563,7 +561,7 @@
 	\begin{figure}%
 		\centering
 		\includegraphics[width=\textwidth]{figures/AAA_normalized_distance_falsealarm_fcn_sw.png}%
-		\caption{Two histograms of mean normalized distance $ND$ values reported for false alarms, one for FCN-MN (black) and one for SW (white).  Bars in the histogram represent the proportion of detection models ($27$ for FCN-MN and $40$ for SW) whose mean $ND$ (over all false alarm components of all images) falls within the interval of the bin.TODO:redactar}
+		\caption{Two histograms of mean normalized distance $ND$ values reported for false alarms, one for FCN-MN (black) and one for SW (white).  Bars in the histogram represent the proportion of detection models ($27$ for FCN-MN and $40$ for SW) whose mean $ND$ (over all false alarm components of all images) falls within the interval of the bin.}
 		\label{fig:AAA_ND}
 	\end{figure}
 	
