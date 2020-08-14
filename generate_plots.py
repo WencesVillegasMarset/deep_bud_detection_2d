@@ -52,7 +52,7 @@ plt.xlim((0.75,1))
 plt.title("Detection Precision and Recall for Sliding Window and FCN-MN models")
 plt.tight_layout()
 
-plt.savefig(os.path.join(FIGURES_PATH, "111_precision_recall_detection.png"), dpi=250)
+plt.savefig(os.path.join(FIGURES_PATH, "Figure3.png"), dpi=250)
 
 
 # Histograma de splits para comparar FCN vs SW. Igual q el mandastes anoche
@@ -92,7 +92,7 @@ def get_split_distribution_barplot(data, models=None):
     plt.legend(title="Models", frameon=True)
     plt.title('Number of Split Cases for FCN-MN and Sliding Windows')
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_PATH, "PPP_split_distribution.png"), dpi=250)
+    plt.savefig(os.path.join(FIGURES_PATH, "Figure4.png"), dpi=250)
 get_split_distribution_barplot(detection_report)
 
 
@@ -117,7 +117,7 @@ plt.xlim((0,1))
 plt.ylim((0,1))
 plt.legend(frameon=True)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_PATH, "XXX_correctly_detected.png"), dpi=250)
+plt.savefig(os.path.join(FIGURES_PATH, "Figure5-a.png"), dpi=250)
 
 
 # ### Lo mismo para Splits
@@ -143,7 +143,7 @@ plt.ylim((0,1))
 plt.legend(frameon=True)
 plt.tight_layout()
 
-plt.savefig(os.path.join(FIGURES_PATH, "XXX_splits.png"), dpi=250)
+plt.savefig(os.path.join(FIGURES_PATH, "Figure5-b.png"), dpi=250)
 
 
 # #### Para false alarms, por ahora, histograma del false positive rate.
@@ -301,7 +301,7 @@ plt.xticks(bins, bins)
 plt.xlabel('Mean Normalized Area ')
 plt.ylabel('Normalized Count')
 plt.title('Mean Normalized Area of FALSE ALARM Cases')
-plt.savefig(os.path.join(FIGURES_PATH, "AAA_mean_relative_area_fcn_vs_sw.png"), dpi=250)
+plt.savefig(os.path.join(FIGURES_PATH, "Figure6.png"), dpi=250)
 
 
 # ##### Para dos modelos FCN y SW en particular sin promediar
@@ -386,7 +386,7 @@ plt.ylabel('Normalized Count')
 plt.ylim((0,1))
 plt.tight_layout()
 plt.title('Mean Normalized Distance of FALSE ALARM Cases')
-plt.savefig(os.path.join(FIGURES_PATH, "AAA_normalized_distance_falsealarm_fcn_sw.png"), dpi=250)
+plt.savefig(os.path.join(FIGURES_PATH, "Figure7.png"), dpi=250)
 
 
 # ##### Para dos modelos especificos sin promediar
