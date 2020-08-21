@@ -183,20 +183,6 @@
 \newblock \bibinfo{title}{Mobilenets: Efficient convolutional neural networks
   for mobile vision applications}.
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1704.04861} .
-%Type = Manual
-\bibitem[{Institute(a)}]{awriNDmanual1}
-\bibinfo{author}{Institute, T.A.W.R.}, a.
-\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.1: Measuring Fruit
-  Quality}. \bibinfo{edition}{1} ed.
-\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
-\newblock \bibinfo{note}{Accessed August 2020}.
-%Type = Manual
-\bibitem[{Institute(b)}]{awriNDmanual3}
-\bibinfo{author}{Institute, T.A.W.R.}, b.
-\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.3: Vine Health}.
-  \bibinfo{edition}{1} ed.
-\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
-\newblock \bibinfo{note}{Accessed August 2020}.
 %Type = Article
 \bibitem[{Jaccard(1912)}]{jaccard1912distribution}
 \bibinfo{author}{Jaccard, P.}, \bibinfo{year}{1912}.
@@ -465,6 +451,20 @@
   for application in greenhouse automation}, in: \bibinfo{booktitle}{2014
   Canadian Conference on Computer and Robot Vision},
   \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{344--348}.
+%Type = Manual
+\bibitem[{{The Australian Wine Research Institute}(a)}]{awriNDmanual1}
+\bibinfo{author}{{The Australian Wine Research Institute}}, a.
+\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.1: Measuring Fruit
+  Quality}. \bibinfo{edition}{1} ed.
+\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
+\newblock \bibinfo{note}{Accessed August 2020}.
+%Type = Manual
+\bibitem[{{The Australian Wine Research Institute}(b)}]{awriNDmanual3}
+\bibinfo{author}{{The Australian Wine Research Institute}}, b.
+\newblock \bibinfo{title}{Viticare on Farm Trials - Manual 3.3: Vine Health}.
+  \bibinfo{edition}{1} ed.
+\newblock \bibinfo{organization}{The Australian Wine Research Institute}.
+\newblock \bibinfo{note}{Accessed August 2020}.
 %Type = Inproceedings
 \bibitem[{Tilgner et~al.(2019)Tilgner, Wagner, Kalischewski, Velten and
   Kummert}]{tilgner2019multi}
