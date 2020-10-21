@@ -1,0 +1,753 @@
+cp -u ../figures/*.png ./figures/
+pdflatex -synctex=1 -interaction=nonstopmode 2020-DeepBudDetection-CEA.tex && bibtex 2020-DeepBudDetection-CEA
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./2020-DeepBudDetection-CEA.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (./elsarticle.cls
+Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def)
+No file 2020-DeepBudDetection-CEA.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `long2015fully' on page 1 undefined on input l
+ine 77.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 1 undefined on in
+put line 77.
+
+
+Package natbib Warning: Citation `pellegrino2005towards' on page 1 undefined on
+ input line 84.
+
+
+Package natbib Warning: Citation `intrigliolo2007evaluation' on page 1 undefine
+d on input line 84.
+
+
+Package natbib Warning: Citation `reynolds2009influence' on page 1 undefined on
+ input line 84.
+
+
+Package natbib Warning: Citation `matese2015technology' on page 1 undefined on 
+input line 84.
+
+
+Package natbib Warning: Citation `ozdemir2017precision' on page 1 undefined on 
+input line 84.
+
+
+Package natbib Warning: Citation `poni2018grapevine' on page 1 undefined on inp
+ut line 84.
+
+
+Package natbib Warning: Citation `whelan1996spatial' on page 1 undefined on inp
+ut line 84.
+
+
+Package natbib Warning: Citation `borgogno2018comparison' on page 1 undefined o
+n input line 84.
+
+
+Package natbib Warning: Citation `taylor2019considerations' on page 1 undefined
+ on input line 84.
+
+
+Package natbib Warning: Citation `lorenz1995growth' on page 1 undefined on inpu
+t line 86.
+
+
+Package natbib Warning: Citation `kliewer2005leaf' on page 1 undefined on input
+ line 86.
+
+
+Overfull \hbox (2.22221pt too wide) has occurred while \output is active
+[] 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cnotenum' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@corref' on input line 89.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `bramley2009lessons' on page 2 undefined on in
+put line 91.
+
+
+Package natbib Warning: Citation `seng2018computer' on page 2 undefined on inpu
+t line 91.
+
+
+Package natbib Warning: Citation `matese2015technology' on page 2 undefined on 
+input line 91.
+
+
+Package natbib Warning: Citation `may2000bud' on page 2 undefined on input line
+ 94.
+
+
+LaTeX Warning: Reference `tab:Tabla1' on page 2 undefined on input line 94.
+
+
+Package natbib Warning: Citation `diaz2018grapevine' on page 2 undefined on inp
+ut line 94.
+
+
+LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 94.
+
+[2]
+
+LaTeX Warning: Reference `tab:Tabla1' on page 3 undefined on input line 97.
+
+
+Package natbib Warning: Citation `sanchez2005bud' on page 3 undefined on input 
+line 97.
+
+
+Package natbib Warning: Citation `noyce2016basis' on page 3 undefined on input 
+line 97.
+
+
+Package natbib Warning: Citation `collins2020effects' on page 3 undefined on in
+put line 97.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 104.
+
+
+LaTeX Warning: Reference `se:matmet' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Reference `sec:results' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Reference `sec:discussion' on page 3 undefined on input line 124
+.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 3 undefined on input line 124
+.
+
+[3]
+
+Package natbib Warning: Citation `seng2018computer' on page 4 undefined on inpu
+t line 129.
+
+
+Package natbib Warning: Citation `nuske2011yield' on page 4 undefined on input 
+line 129.
+
+
+Package natbib Warning: Citation `tardaguila2012automatic' on page 4 undefined 
+on input line 129.
+
+
+Package natbib Warning: Citation `diago2012grapevine' on page 4 undefined on in
+put line 129.
+
+
+Package natbib Warning: Citation `herzog2014objective' on page 4 undefined on i
+nput line 129.
+
+
+Package natbib Warning: Citation `herzog2014initial' on page 4 undefined on inp
+ut line 129.
+
+
+Package natbib Warning: Citation `berenstein2010grape' on page 4 undefined on i
+nput line 129.
+
+
+Package natbib Warning: Citation `tardaguila2012applications' on page 4 undefin
+ed on input line 129.
+
+
+Package natbib Warning: Citation `whalley2013applications' on page 4 undefined 
+on input line 129.
+
+
+Package natbib Warning: Citation `hirano2006industry' on page 4 undefined on in
+put line 129.
+
+
+Package natbib Warning: Citation `kahng2017cti' on page 4 undefined on input li
+ne 129.
+
+
+Package natbib Warning: Citation `tilgner2019multi' on page 4 undefined on inpu
+t line 129.
+
+
+Package natbib Warning: Citation `ning2017inception' on page 4 undefined on inp
+ut line 129.
+
+
+Package natbib Warning: Citation `grimm2019adaptable' on page 4 undefined on in
+put line 129.
+
+
+Package natbib Warning: Citation `rudolph2018efficient' on page 4 undefined on 
+input line 129.
+
+[4]
+
+Package natbib Warning: Citation `tarry2014integrated' on page 5 undefined on i
+nput line 131.
+
+
+Package natbib Warning: Citation `zhao2018research' on page 5 undefined on inpu
+t line 131.
+
+
+Package natbib Warning: Citation `xu2014detection' on page 5 undefined on input
+ line 131.
+
+
+Package natbib Warning: Citation `herzog2014initial' on page 5 undefined on inp
+ut line 131.
+
+
+Package natbib Warning: Citation `perez2017image' on page 5 undefined on input 
+line 131.
+
+
+Package natbib Warning: Citation `diaz2018grapevine' on page 5 undefined on inp
+ut line 131.
+
+
+Package natbib Warning: Citation `xu2014detection' on page 5 undefined on input
+ line 133.
+
+
+Package natbib Warning: Citation `herzog2014initial' on page 5 undefined on inp
+ut line 135.
+
+
+Package natbib Warning: Citation `perez2017image' on page 5 undefined on input 
+line 137.
+
+[5]
+
+Package natbib Warning: Citation `diaz2018grapevine' on page 6 undefined on inp
+ut line 139.
+
+
+LaTeX Warning: Reference `sec:fcn' on page 6 undefined on input line 148.
+
+
+LaTeX Warning: Reference `sec:sw' on page 6 undefined on input line 148.
+
+
+Package natbib Warning: Citation `perez2017image' on page 6 undefined on input 
+line 148.
+
+
+LaTeX Warning: Reference `sec:corpus' on page 6 undefined on input line 150.
+
+
+LaTeX Warning: Reference `sec:train' on page 6 undefined on input line 150.
+
+[6]
+
+Package natbib Warning: Citation `long2015fully' on page 7 undefined on input l
+ine 152.
+
+
+LaTeX Warning: Reference `sec:fcn' on page 7 undefined on input line 152.
+
+
+Package natbib Warning: Citation `lampert2008beyond' on page 7 undefined on inp
+ut line 152.
+
+
+Package natbib Warning: Citation `perez2017image' on page 7 undefined on input 
+line 154.
+
+
+Package natbib Warning: Citation `perez2017image' on page 7 undefined on input 
+line 154.
+
+
+Package natbib Warning: Citation `vapnik2013nature' on page 7 undefined on inpu
+t line 154.
+
+[7]
+
+Package natbib Warning: Citation `long2015fully' on page 8 undefined on input l
+ine 161.
+
+
+Package natbib Warning: Citation `litjens2017survey' on page 8 undefined on inp
+ut line 161.
+
+
+Package natbib Warning: Citation `garcia2018survey' on page 8 undefined on inpu
+t line 161.
+
+
+Package natbib Warning: Citation `kaymak2019brief' on page 8 undefined on input
+ line 161.
+
+
+LaTeX Warning: Reference `fig:FCN-MN' on page 8 undefined on input line 161.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 8 undefined on in
+put line 163.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 8 undefined on in
+put line 168.
+
+
+Package natbib Warning: Citation `howard2017mobilenets' on page 8 undefined on 
+input line 168.
+
+
+Package natbib Warning: Citation `siam2018rtseg' on page 8 undefined on input l
+ine 168.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 8 undefined on in
+put line 168.
+
+
+Package natbib Warning: Citation `howard2017mobilenets' on page 8 undefined on 
+input line 168.
+
+
+Package natbib Warning: Citation `siam2018rtseg' on page 8 undefined on input l
+ine 168.
+
+
+Package natbib Warning: Citation `long2015fully' on page 8 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `long2015fully' on page 8 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 8 undefined on in
+put line 172.
+
+
+Package natbib Warning: Citation `long2015fully' on page 8 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `shelhamer2017fully' on page 8 undefined on in
+put line 172.
+
+[8]
+
+Package natbib Warning: Citation `Simonyan2015VeryDC' on page 9 undefined on in
+put line 174.
+
+
+Package natbib Warning: Citation `howard2017mobilenets' on page 9 undefined on 
+input line 174.
+
+
+Package natbib Warning: Citation `long2015fully' on page 9 undefined on input l
+ine 174.
+
+
+Package natbib Warning: Citation `siam2018rtseg' on page 9 undefined on input l
+ine 174.
+
+
+Package natbib Warning: Citation `siam2018rtseg' on page 9 undefined on input l
+ine 174.
+
+
+Package natbib Warning: Citation `long2015fully' on page 9 undefined on input l
+ine 174.
+
+[9 <./figures/Figure1.png>]
+
+Package natbib Warning: Citation `perez2017image' on page 10 undefined on input
+ line 182.
+
+
+Package natbib Warning: Citation `perez2017image' on page 10 undefined on input
+ line 184.
+
+
+Package natbib Warning: Citation `divvala2009empirical' on page 10 undefined on
+ input line 186.
+
+
+Package natbib Warning: Citation `wang2009hog' on page 10 undefined on input li
+ne 186.
+
+
+Package natbib Warning: Citation `chum2007exemplar' on page 10 undefined on inp
+ut line 186.
+
+
+Package natbib Warning: Citation `ferrari2007groups' on page 10 undefined on in
+put line 186.
+
+
+Package natbib Warning: Citation `dalal2005histograms' on page 10 undefined on 
+input line 186.
+
+
+Package natbib Warning: Citation `rowley1996human' on page 10 undefined on inpu
+t line 186.
+
+
+Package natbib Warning: Citation `perez2017image' on page 10 undefined on input
+ line 186.
+
+
+LaTeX Warning: Reference `sec:swtrain' on page 10 undefined on input line 186.
+
+
+Package natbib Warning: Citation `perez2017image' on page 10 undefined on input
+ line 188.
+
+
+Package natbib Warning: Citation `lowe2004distinctive' on page 10 undefined on 
+input line 188.
+
+
+Package natbib Warning: Citation `csurka2004visual' on page 10 undefined on inp
+ut line 188.
+
+
+Package natbib Warning: Citation `vapnik2013nature' on page 10 undefined on inp
+ut line 188.
+
+
+LaTeX Warning: Reference `sec:swtrain' on page 10 undefined on input line 188.
+
+[10]
+
+Package natbib Warning: Citation `perez2017image' on page 11 undefined on input
+ line 196.
+
+[11]
+
+Package natbib Warning: Citation `han2013comparison' on page 12 undefined on in
+put line 209.
+
+
+Package natbib Warning: Citation `pan2009survey' on page 12 undefined on input 
+line 211.
+
+
+Package natbib Warning: Citation `shorten2019survey' on page 12 undefined on in
+put line 211.
+
+
+Package natbib Warning: Citation `howard2017mobilenets' on page 12 undefined on
+ input line 211.
+
+
+Package natbib Warning: Citation `kornblith2019better' on page 12 undefined on 
+input line 211.
+
+
+LaTeX Warning: Reference `sec:fcn' on page 12 undefined on input line 211.
+
+[12]
+
+Package natbib Warning: Citation `jaccard1912distribution' on page 13 undefined
+ on input line 216.
+
+
+LaTeX Warning: Reference `subsec:segmetrics' on page 13 undefined on input line
+ 216.
+
+
+LaTeX Warning: Reference `tab:TablaX' on page 13 undefined on input line 216.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 218.
+
+
+Package natbib Warning: Citation `perez2017image' on page 13 undefined on input
+ line 240.
+
+
+LaTeX Warning: Reference `fig:Figure2' on page 13 undefined on input line 240.
+
+
+LaTeX Warning: Reference `fig:Figure2' on page 13 undefined on input line 240.
+
+
+Package natbib Warning: Citation `perez2017image' on page 13 undefined on input
+ line 240.
+
+[13]
+
+Package natbib Warning: Citation `perez2017image' on page 14 undefined on input
+ line 249.
+
+
+LaTeX Warning: Reference `tab:TableX' on page 14 undefined on input line 257.
+
+[14 <./figures/Figure2.png (PNG copy)>]
+
+LaTeX Warning: Reference `sec:results' on page 15 undefined on input line 260.
+
+
+Package natbib Warning: Citation `oguz2017dice' on page 15 undefined on input l
+ine 276.
+
+[15] [16]
+
+Package natbib Warning: Citation `dice1945measures' on page 17 undefined on inp
+ut line 331.
+
+
+Package natbib Warning: Citation `jaccard1912distribution' on page 17 undefined
+ on input line 331.
+
+[17] [18]
+
+LaTeX Warning: Reference `tab:TablaXX' on page 19 undefined on input line 356.
+
+
+LaTeX Warning: Reference `sec:metrics' on page 19 undefined on input line 359.
+
+[19]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 376.
+
+
+LaTeX Warning: Float too large for page by 7.22542pt on input line 419.
+
+
+LaTeX Warning: Reference `tab:TablaXX' on page 20 undefined on input line 426.
+
+[20] [21]
+
+LaTeX Warning: Reference `tab:TablaXX' on page 22 undefined on input line 433.
+
+
+LaTeX Warning: Reference `tab:TablaXX' on page 22 undefined on input line 433.
+
+
+LaTeX Warning: Reference `fig:number-of-split' on page 22 undefined on input li
+ne 437.
+
+
+LaTeX Warning: Reference `tab:TablaXX' on page 22 undefined on input line 437.
+
+[22 <./figures/111_precision_recall_detection.png>]
+
+LaTeX Warning: Reference `fig:XXX-a' on page 23 undefined on input line 448.
+
+
+LaTeX Warning: Reference `fig:XXX-b' on page 23 undefined on input line 448.
+
+
+LaTeX Warning: Reference `tab:TablaXX' on page 23 undefined on input line 448.
+
+
+LaTeX Warning: Reference `fig:XXX-a' on page 23 undefined on input line 450.
+
+
+LaTeX Warning: Reference `fig:XXX-b' on page 23 undefined on input line 452.
+
+[23 <./figures/PPP_split_distribution.png>]
+
+LaTeX Warning: Reference `tab:TablaXX' on page 24 undefined on input line 483.
+
+
+LaTeX Warning: Reference `fig:AAA' on page 24 undefined on input line 486.
+
+[24 <./figures/XXX_correctly_detected.png> <./figures/XXX_splits.png>]
+
+LaTeX Warning: Reference `(' on page 25 undefined on input line 495.
+
+
+LaTeX Warning: Reference `fig:AAA_ND' on page 25 undefined on input line 498.
+
+
+LaTeX Warning: Reference `(' on page 25 undefined on input line 498.
+
+[25 <./figures/AAA_mean_relative_area_fcn_vs_sw.png>]
+
+Package natbib Warning: Citation `REF' on page 26 undefined on input line 523.
+
+
+Package natbib Warning: Citation `REF' on page 26 undefined on input line 525.
+
+[26 <./figures/AAA_normalized_distance_falsealarm_fcn_sw.png>]
+
+LaTeX Warning: Reference `tab:Tabla1' on page 27 undefined on input line 534.
+
+
+LaTeX Warning: Reference `tab:TablaXX' on page 27 undefined on input line 536.
+
+
+Overfull \hbox (4.13956pt too wide) in paragraph at lines 536--543
+\OT1/cmr/m/n/10 precision and segmentation-recall for cor-rectly de-tected of $
+98\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1(0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6)$ an
+d $98\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 8(3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4)$
+,
+[27]
+
+LaTeX Warning: Reference `tab:Tabla1' on page 28 undefined on input line 544.
+
+[28] [29]
+
+Package natbib Warning: Citation `santos2020grape' on page 30 undefined on inpu
+t line 594.
+
+
+Package natbib Warning: Citation `REF DE 3D RECONSTRUCTION' on page 30 undefine
+d on input line 596.
+
+
+Package natbib Warning: Citation `diaz2018grapevine' on page 30 undefined on in
+put line 596.
+
+[30]
+No file 2020-DeepBudDetection-CEA.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[31] (./2020-DeepBudDetection-CEA.aux)
+
+Package rerunfilecheck Warning: File `2020-DeepBudDetection-CEA.out' has change
+d.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information) </home/fbromberg/.texlive2
+019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on 2020-DeepBudDetection-CEA.pdf (31 pages, 2038330 bytes).
+SyncTeX written on 2020-DeepBudDetection-CEA.synctex.gz.
+Transcript written on 2020-DeepBudDetection-CEA.log.
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+The top-level auxiliary file: 2020-DeepBudDetection-CEA.aux
+The style file: elsarticle-harv.bst
+White space in argument---line 170 of file 2020-DeepBudDetection-CEA.aux
+ : \citation{REF
+ :               DE 3D RECONSTRUCTION}
+I'm skipping whatever remains of this command
+Database file #1: 2020-DeepBudDetection-CEA.bib
+Warning--I didn't find a database entry for "REF"
+Warning--empty pages in han2013comparison
+Warning--empty pages in tardaguila2012automatic
+Warning--empty journal in whalley2013applications
+(There was 1 error message)
